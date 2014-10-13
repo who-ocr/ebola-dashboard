@@ -1,0 +1,4 @@
+baseurl:
+permalink: pretty
+permalink: /map/:title
+
