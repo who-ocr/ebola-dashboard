@@ -1,4 +1,4 @@
-baseurl:
+baseurl: ebola-dashboard/
 permalink: pretty
 permalink: /map/:title
 
