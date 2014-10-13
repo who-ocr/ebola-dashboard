@@ -1,4 +1,4 @@
-World Health Organization
+Ebola WHO
 =========================================
 Jekyll-powered dashboard
 
