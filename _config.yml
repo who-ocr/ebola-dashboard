@@ -1,4 +1,4 @@
 baseurl: /ebola-dashboard/
 permalink: pretty
-permalink: /map/:title
+permalink: /:categories/:year/:month/:day/
 

@@ -2,7 +2,12 @@ callback([
 
   {
     "text": "About",
-    "href": "/about/"
+    "href": "/ebola-dashboard//about/"
+  } ,
+
+  {
+    "text": "WHO Situation Report",
+    "href": "/ebola-dashboard//situation-report/2014/10/08/"
   } 
 
 ])
