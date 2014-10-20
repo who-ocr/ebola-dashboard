@@ -7116,7 +7116,7 @@ $(document).ready(function() {
                     'iconSize': [value.total_cases, value.total_cases]
                 };
 
-                var markup = '<div class="inner">' + value.total_cases + '<br>' + value.district + '</div>';
+                var markup = '<div class="inner"><b>' + value.total_cases + ' cases</b><br>' + value.district + ', ' + value.country + '</div>';
 
                 var marker = L.marker([value.centroid[1], value.centroid[0]], {
                     'epiweek': epiweek,
@@ -7136,6 +7136,7 @@ $(document).ready(function() {
     });
 
     // show the most recent week's cases
+    //map.fitBounds(cases.getBounds());
     $('.week-label').empty().append(globalData[globalData.length - 1]['epiweek']);
     cases.eachLayer(function(marker) {
         if (marker.options.epiweek === globalData[globalData.length - 1]['epiweek']) {
@@ -7178,6 +7179,7 @@ $(document).ready(function() {
     var sliderValue;
     $("#slider").on("slide", function(event, ui) {
         sliderValue = ui.value;
+        
         $('.week-label').empty().append(globalData[sliderValue]['epiweek']);
         cases.eachLayer(function(marker) {
             if (marker.options.epiweek === globalData[sliderValue]['epiweek']) {
@@ -7203,6 +7205,25 @@ $(document).ready(function() {
         }
     });
 
+ 	
+ 	
+ 	 // Update latest numbers
+ 	var casesTotal = 0;
+ 	$.each(globalData, function(index, value) {
+ 	 console.log(value.total);
+ 	  casesTotal = casesTotal + value.total;
+ 	});
 
+
+	$('.summary-cases').empty().append(commaSeparateNumber(casesTotal));
+	$('.summary-cases-recent').empty().append(commaSeparateNumber(globalData[globalData.length -1]['total']));
+	
+	
+	function commaSeparateNumber(val){
+    while (/(\d+)(\d{3})/.test(val.toString())){
+      val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
+    }
+    return val;
+  }
 
 });
