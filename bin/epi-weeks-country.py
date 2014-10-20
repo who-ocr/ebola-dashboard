@@ -41,7 +41,8 @@ for week, values in groupby(data_week, lambda x: x['epiweek']):
 		"countries": [],
 		"confirmed": 0,
 		"probable": 0,
-		"suspected": 0
+		"suspected": 0,
+		"deaths": 0
 	}
 	epiweek["epiweek"] = week
 
@@ -49,6 +50,7 @@ for week, values in groupby(data_week, lambda x: x['epiweek']):
 	weekConfirmed = 0
 	weekProbable = 0
 	weekSuspected = 0
+	weekDeaths = 0
 	
 	for country, cty in groupby(sorted(values, key=lambda x: x['country']), lambda x: x['country']):
 		# for country totals
@@ -59,21 +61,29 @@ for week, values in groupby(data_week, lambda x: x['epiweek']):
 			"suspected": 0,
 			"hcw": 0,
 			"total_cases": 0,
-			"centroid": getCentroid(country)
+			"centroid": getCentroid(country),
+			"deaths": 0
 		}
 		country_totals["country"] = country
 		
 		total = 0
 		hcw = 0
+		deaths = 0
 
 		for case, c in groupby(sorted(cty, key=lambda x: x['EpiCaseDef']), lambda x: x['EpiCaseDef']):
 			count = 0
 			for i in c: 
 				weekTotal += 1
 				total += 1
+
+				# check if HCW, add to total count
 				if i['HCW'] == "TRUE":
 					hcw += 1
-				caseDate = i['date'].split('-')
+				# check if status = Dead
+				if i['StatusAsOfCurrentDate'].lower() == "dead":
+					deaths += 1
+					weekDeaths += 1
+
 				count += 1
 			if case == "Confirmed":
 				country_totals["confirmed"] = count
@@ -86,12 +96,14 @@ for week, values in groupby(data_week, lambda x: x['epiweek']):
 		weekSuspected += country_totals["suspected"]
 		country_totals["total_cases"] = total
 		country_totals["hcw"] = hcw
+		country_totals["deaths"] = deaths
 
 		epiweek["countries"].append(country_totals)
 	epiweek["total"] = weekTotal
 	epiweek["confirmed"] = weekConfirmed
 	epiweek["probable"] = weekProbable
 	epiweek["suspected"] = weekSuspected
+	epiweek["deaths"] = weekDeaths
 	weeksCountry.append(epiweek)
 
 # write out full file 

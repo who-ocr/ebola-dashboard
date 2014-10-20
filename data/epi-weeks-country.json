@@ -1,6 +1,22 @@
 [
     {
         "confirmed": 0,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 0,
+                "country": "Guinea",
+                "deaths": 2,
+                "hcw": 0,
+                "probable": 2,
+                "suspected": 0,
+                "total_cases": 2
+            }
+        ],
+        "deaths": 2,
         "epiweek": "2014-W01",
         "probable": 2,
         "suspected": 0,
@@ -8,6 +24,22 @@
     },
     {
         "confirmed": 8,
+        "countries": [
+            {
+                "centroid": [
+                    -11.7921028963,
+                    8.560340924
+                ],
+                "confirmed": 8,
+                "country": "Sierra Leone",
+                "deaths": 6,
+                "hcw": 0,
+                "probable": 0,
+                "suspected": 1,
+                "total_cases": 9
+            }
+        ],
+        "deaths": 6,
         "epiweek": "2014-W02",
         "probable": 0,
         "suspected": 1,
@@ -15,6 +47,22 @@
     },
     {
         "confirmed": 0,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 0,
+                "country": "Guinea",
+                "deaths": 5,
+                "hcw": 1,
+                "probable": 5,
+                "suspected": 0,
+                "total_cases": 5
+            }
+        ],
+        "deaths": 5,
         "epiweek": "2014-W04",
         "probable": 5,
         "suspected": 0,
@@ -22,6 +70,22 @@
     },
     {
         "confirmed": 0,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 0,
+                "country": "Guinea",
+                "deaths": 3,
+                "hcw": 1,
+                "probable": 3,
+                "suspected": 0,
+                "total_cases": 3
+            }
+        ],
+        "deaths": 3,
         "epiweek": "2014-W05",
         "probable": 3,
         "suspected": 0,
@@ -29,6 +93,48 @@
     },
     {
         "confirmed": 8,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 0,
+                "country": "Guinea",
+                "deaths": 5,
+                "hcw": 0,
+                "probable": 5,
+                "suspected": 0,
+                "total_cases": 5
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 0,
+                "country": "Liberia",
+                "deaths": 0,
+                "hcw": 2,
+                "probable": 2,
+                "suspected": 0,
+                "total_cases": 2
+            },
+            {
+                "centroid": [
+                    -11.7921028963,
+                    8.560340924
+                ],
+                "confirmed": 8,
+                "country": "Sierra Leone",
+                "deaths": 7,
+                "hcw": 0,
+                "probable": 0,
+                "suspected": 0,
+                "total_cases": 8
+            }
+        ],
+        "deaths": 12,
         "epiweek": "2014-W06",
         "probable": 7,
         "suspected": 0,
@@ -36,6 +142,22 @@
     },
     {
         "confirmed": 0,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 0,
+                "country": "Guinea",
+                "deaths": 3,
+                "hcw": 1,
+                "probable": 3,
+                "suspected": 0,
+                "total_cases": 3
+            }
+        ],
+        "deaths": 3,
         "epiweek": "2014-W07",
         "probable": 3,
         "suspected": 0,
@@ -43,6 +165,22 @@
     },
     {
         "confirmed": 0,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 0,
+                "country": "Guinea",
+                "deaths": 5,
+                "hcw": 1,
+                "probable": 5,
+                "suspected": 0,
+                "total_cases": 5
+            }
+        ],
+        "deaths": 5,
         "epiweek": "2014-W08",
         "probable": 5,
         "suspected": 0,
@@ -50,6 +188,22 @@
     },
     {
         "confirmed": 1,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 1,
+                "country": "Guinea",
+                "deaths": 7,
+                "hcw": 0,
+                "probable": 6,
+                "suspected": 0,
+                "total_cases": 7
+            }
+        ],
+        "deaths": 7,
         "epiweek": "2014-W09",
         "probable": 6,
         "suspected": 0,
@@ -57,6 +211,35 @@
     },
     {
         "confirmed": 11,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 2,
+                "country": "Guinea",
+                "deaths": 7,
+                "hcw": 1,
+                "probable": 5,
+                "suspected": 0,
+                "total_cases": 7
+            },
+            {
+                "centroid": [
+                    -11.7921028963,
+                    8.560340924
+                ],
+                "confirmed": 9,
+                "country": "Sierra Leone",
+                "deaths": 6,
+                "hcw": 0,
+                "probable": 0,
+                "suspected": 0,
+                "total_cases": 9
+            }
+        ],
+        "deaths": 13,
         "epiweek": "2014-W10",
         "probable": 5,
         "suspected": 0,
@@ -64,6 +247,22 @@
     },
     {
         "confirmed": 11,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 11,
+                "country": "Guinea",
+                "deaths": 22,
+                "hcw": 1,
+                "probable": 16,
+                "suspected": 0,
+                "total_cases": 27
+            }
+        ],
+        "deaths": 22,
         "epiweek": "2014-W11",
         "probable": 16,
         "suspected": 0,
@@ -71,6 +270,35 @@
     },
     {
         "confirmed": 11,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 11,
+                "country": "Guinea",
+                "deaths": 15,
+                "hcw": 2,
+                "probable": 6,
+                "suspected": 0,
+                "total_cases": 17
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 0,
+                "country": "Liberia",
+                "deaths": 1,
+                "hcw": 0,
+                "probable": 1,
+                "suspected": 2,
+                "total_cases": 3
+            }
+        ],
+        "deaths": 16,
         "epiweek": "2014-W12",
         "probable": 7,
         "suspected": 2,
@@ -78,6 +306,35 @@
     },
     {
         "confirmed": 23,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 23,
+                "country": "Guinea",
+                "deaths": 19,
+                "hcw": 7,
+                "probable": 4,
+                "suspected": 0,
+                "total_cases": 27
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 0,
+                "country": "Liberia",
+                "deaths": 0,
+                "hcw": 0,
+                "probable": 1,
+                "suspected": 0,
+                "total_cases": 1
+            }
+        ],
+        "deaths": 19,
         "epiweek": "2014-W13",
         "probable": 5,
         "suspected": 0,
@@ -85,6 +342,35 @@
     },
     {
         "confirmed": 23,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 23,
+                "country": "Guinea",
+                "deaths": 21,
+                "hcw": 3,
+                "probable": 5,
+                "suspected": 0,
+                "total_cases": 28
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 0,
+                "country": "Liberia",
+                "deaths": 1,
+                "hcw": 0,
+                "probable": 2,
+                "suspected": 0,
+                "total_cases": 2
+            }
+        ],
+        "deaths": 22,
         "epiweek": "2014-W14",
         "probable": 7,
         "suspected": 0,
@@ -92,6 +378,48 @@
     },
     {
         "confirmed": 37,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 27,
+                "country": "Guinea",
+                "deaths": 19,
+                "hcw": 4,
+                "probable": 0,
+                "suspected": 0,
+                "total_cases": 27
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 2,
+                "country": "Liberia",
+                "deaths": 4,
+                "hcw": 1,
+                "probable": 6,
+                "suspected": 0,
+                "total_cases": 8
+            },
+            {
+                "centroid": [
+                    -11.7921028963,
+                    8.560340924
+                ],
+                "confirmed": 8,
+                "country": "Sierra Leone",
+                "deaths": 7,
+                "hcw": 0,
+                "probable": 0,
+                "suspected": 2,
+                "total_cases": 10
+            }
+        ],
+        "deaths": 30,
         "epiweek": "2014-W15",
         "probable": 6,
         "suspected": 2,
@@ -99,6 +427,22 @@
     },
     {
         "confirmed": 16,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 16,
+                "country": "Guinea",
+                "deaths": 9,
+                "hcw": 2,
+                "probable": 0,
+                "suspected": 0,
+                "total_cases": 16
+            }
+        ],
+        "deaths": 9,
         "epiweek": "2014-W16",
         "probable": 0,
         "suspected": 0,
@@ -106,6 +450,22 @@
     },
     {
         "confirmed": 10,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 10,
+                "country": "Guinea",
+                "deaths": 6,
+                "hcw": 0,
+                "probable": 0,
+                "suspected": 0,
+                "total_cases": 10
+            }
+        ],
+        "deaths": 6,
         "epiweek": "2014-W17",
         "probable": 0,
         "suspected": 0,
@@ -113,6 +473,22 @@
     },
     {
         "confirmed": 3,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 3,
+                "country": "Guinea",
+                "deaths": 11,
+                "hcw": 0,
+                "probable": 8,
+                "suspected": 0,
+                "total_cases": 11
+            }
+        ],
+        "deaths": 11,
         "epiweek": "2014-W18",
         "probable": 8,
         "suspected": 0,
@@ -120,6 +496,48 @@
     },
     {
         "confirmed": 19,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 9,
+                "country": "Guinea",
+                "deaths": 12,
+                "hcw": 0,
+                "probable": 3,
+                "suspected": 0,
+                "total_cases": 12
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 2,
+                "country": "Liberia",
+                "deaths": 0,
+                "hcw": 1,
+                "probable": 1,
+                "suspected": 0,
+                "total_cases": 3
+            },
+            {
+                "centroid": [
+                    -11.7921028963,
+                    8.560340924
+                ],
+                "confirmed": 8,
+                "country": "Sierra Leone",
+                "deaths": 9,
+                "hcw": 0,
+                "probable": 0,
+                "suspected": 1,
+                "total_cases": 9
+            }
+        ],
+        "deaths": 21,
         "epiweek": "2014-W19",
         "probable": 4,
         "suspected": 1,
@@ -127,6 +545,22 @@
     },
     {
         "confirmed": 6,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 6,
+                "country": "Guinea",
+                "deaths": 5,
+                "hcw": 0,
+                "probable": 2,
+                "suspected": 0,
+                "total_cases": 8
+            }
+        ],
+        "deaths": 5,
         "epiweek": "2014-W20",
         "probable": 2,
         "suspected": 0,
@@ -134,6 +568,22 @@
     },
     {
         "confirmed": 22,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 22,
+                "country": "Guinea",
+                "deaths": 17,
+                "hcw": 2,
+                "probable": 4,
+                "suspected": 0,
+                "total_cases": 26
+            }
+        ],
+        "deaths": 17,
         "epiweek": "2014-W21",
         "probable": 4,
         "suspected": 0,
@@ -141,6 +591,35 @@
     },
     {
         "confirmed": 39,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 35,
+                "country": "Guinea",
+                "deaths": 30,
+                "hcw": 0,
+                "probable": 12,
+                "suspected": 0,
+                "total_cases": 47
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 4,
+                "country": "Liberia",
+                "deaths": 5,
+                "hcw": 3,
+                "probable": 0,
+                "suspected": 1,
+                "total_cases": 5
+            }
+        ],
+        "deaths": 35,
         "epiweek": "2014-W22",
         "probable": 12,
         "suspected": 1,
@@ -148,6 +627,48 @@
     },
     {
         "confirmed": 32,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 24,
+                "country": "Guinea",
+                "deaths": 15,
+                "hcw": 2,
+                "probable": 2,
+                "suspected": 0,
+                "total_cases": 26
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 1,
+                "country": "Liberia",
+                "deaths": 1,
+                "hcw": 0,
+                "probable": 0,
+                "suspected": 2,
+                "total_cases": 3
+            },
+            {
+                "centroid": [
+                    -11.7921028963,
+                    8.560340924
+                ],
+                "confirmed": 7,
+                "country": "Sierra Leone",
+                "deaths": 6,
+                "hcw": 1,
+                "probable": 1,
+                "suspected": 0,
+                "total_cases": 8
+            }
+        ],
+        "deaths": 22,
         "epiweek": "2014-W23",
         "probable": 3,
         "suspected": 2,
@@ -155,6 +676,48 @@
     },
     {
         "confirmed": 91,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 29,
+                "country": "Guinea",
+                "deaths": 24,
+                "hcw": 1,
+                "probable": 3,
+                "suspected": 0,
+                "total_cases": 32
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 19,
+                "country": "Liberia",
+                "deaths": 18,
+                "hcw": 5,
+                "probable": 0,
+                "suspected": 3,
+                "total_cases": 22
+            },
+            {
+                "centroid": [
+                    -11.7921028963,
+                    8.560340924
+                ],
+                "confirmed": 43,
+                "country": "Sierra Leone",
+                "deaths": 54,
+                "hcw": 7,
+                "probable": 22,
+                "suspected": 3,
+                "total_cases": 68
+            }
+        ],
+        "deaths": 96,
         "epiweek": "2014-W24",
         "probable": 25,
         "suspected": 6,
@@ -162,6 +725,48 @@
     },
     {
         "confirmed": 111,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 18,
+                "country": "Guinea",
+                "deaths": 15,
+                "hcw": 0,
+                "probable": 0,
+                "suspected": 0,
+                "total_cases": 18
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 17,
+                "country": "Liberia",
+                "deaths": 14,
+                "hcw": 2,
+                "probable": 0,
+                "suspected": 7,
+                "total_cases": 24
+            },
+            {
+                "centroid": [
+                    -11.7921028963,
+                    8.560340924
+                ],
+                "confirmed": 76,
+                "country": "Sierra Leone",
+                "deaths": 39,
+                "hcw": 7,
+                "probable": 1,
+                "suspected": 0,
+                "total_cases": 77
+            }
+        ],
+        "deaths": 68,
         "epiweek": "2014-W25",
         "probable": 1,
         "suspected": 7,
@@ -169,6 +774,48 @@
     },
     {
         "confirmed": 69,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 22,
+                "country": "Guinea",
+                "deaths": 20,
+                "hcw": 0,
+                "probable": 2,
+                "suspected": 0,
+                "total_cases": 24
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 12,
+                "country": "Liberia",
+                "deaths": 12,
+                "hcw": 3,
+                "probable": 2,
+                "suspected": 2,
+                "total_cases": 16
+            },
+            {
+                "centroid": [
+                    -11.7921028963,
+                    8.560340924
+                ],
+                "confirmed": 35,
+                "country": "Sierra Leone",
+                "deaths": 20,
+                "hcw": 5,
+                "probable": 2,
+                "suspected": 0,
+                "total_cases": 37
+            }
+        ],
+        "deaths": 52,
         "epiweek": "2014-W26",
         "probable": 6,
         "suspected": 2,
@@ -176,6 +823,48 @@
     },
     {
         "confirmed": 91,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 2,
+                "country": "Guinea",
+                "deaths": 3,
+                "hcw": 0,
+                "probable": 2,
+                "suspected": 0,
+                "total_cases": 4
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 6,
+                "country": "Liberia",
+                "deaths": 9,
+                "hcw": 1,
+                "probable": 4,
+                "suspected": 4,
+                "total_cases": 14
+            },
+            {
+                "centroid": [
+                    -11.7921028963,
+                    8.560340924
+                ],
+                "confirmed": 83,
+                "country": "Sierra Leone",
+                "deaths": 29,
+                "hcw": 11,
+                "probable": 0,
+                "suspected": 1,
+                "total_cases": 84
+            }
+        ],
+        "deaths": 41,
         "epiweek": "2014-W27",
         "probable": 6,
         "suspected": 5,
@@ -183,6 +872,48 @@
     },
     {
         "confirmed": 132,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 6,
+                "country": "Guinea",
+                "deaths": 7,
+                "hcw": 0,
+                "probable": 1,
+                "suspected": 0,
+                "total_cases": 7
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 19,
+                "country": "Liberia",
+                "deaths": 20,
+                "hcw": 5,
+                "probable": 8,
+                "suspected": 7,
+                "total_cases": 34
+            },
+            {
+                "centroid": [
+                    -11.7921028963,
+                    8.560340924
+                ],
+                "confirmed": 107,
+                "country": "Sierra Leone",
+                "deaths": 35,
+                "hcw": 7,
+                "probable": 1,
+                "suspected": 3,
+                "total_cases": 111
+            }
+        ],
+        "deaths": 62,
         "epiweek": "2014-W28",
         "probable": 10,
         "suspected": 10,
@@ -190,6 +921,48 @@
     },
     {
         "confirmed": 83,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 5,
+                "country": "Guinea",
+                "deaths": 8,
+                "hcw": 0,
+                "probable": 3,
+                "suspected": 0,
+                "total_cases": 8
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 11,
+                "country": "Liberia",
+                "deaths": 61,
+                "hcw": 9,
+                "probable": 43,
+                "suspected": 24,
+                "total_cases": 78
+            },
+            {
+                "centroid": [
+                    -11.7921028963,
+                    8.560340924
+                ],
+                "confirmed": 67,
+                "country": "Sierra Leone",
+                "deaths": 35,
+                "hcw": 11,
+                "probable": 3,
+                "suspected": 0,
+                "total_cases": 70
+            }
+        ],
+        "deaths": 104,
         "epiweek": "2014-W29",
         "probable": 49,
         "suspected": 24,
@@ -197,6 +970,48 @@
     },
     {
         "confirmed": 169,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 75,
+                "country": "Guinea",
+                "deaths": 35,
+                "hcw": 1,
+                "probable": 17,
+                "suspected": 1,
+                "total_cases": 93
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 12,
+                "country": "Liberia",
+                "deaths": 77,
+                "hcw": 18,
+                "probable": 59,
+                "suspected": 26,
+                "total_cases": 97
+            },
+            {
+                "centroid": [
+                    -11.7921028963,
+                    8.560340924
+                ],
+                "confirmed": 82,
+                "country": "Sierra Leone",
+                "deaths": 28,
+                "hcw": 14,
+                "probable": 0,
+                "suspected": 0,
+                "total_cases": 82
+            }
+        ],
+        "deaths": 140,
         "epiweek": "2014-W30",
         "probable": 76,
         "suspected": 27,
@@ -204,6 +1019,61 @@
     },
     {
         "confirmed": 136,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 12,
+                "country": "Guinea",
+                "deaths": 22,
+                "hcw": 0,
+                "probable": 14,
+                "suspected": 3,
+                "total_cases": 29
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 27,
+                "country": "Liberia",
+                "deaths": 153,
+                "hcw": 11,
+                "probable": 115,
+                "suspected": 21,
+                "total_cases": 163
+            },
+            {
+                "centroid": [
+                    8.10532486357,
+                    9.59363567392
+                ],
+                "confirmed": 5,
+                "country": "Nigeria",
+                "deaths": 2,
+                "hcw": 4,
+                "probable": 0,
+                "suspected": 0,
+                "total_cases": 5
+            },
+            {
+                "centroid": [
+                    -11.7921028963,
+                    8.560340924
+                ],
+                "confirmed": 92,
+                "country": "Sierra Leone",
+                "deaths": 55,
+                "hcw": 14,
+                "probable": 3,
+                "suspected": 31,
+                "total_cases": 126
+            }
+        ],
+        "deaths": 232,
         "epiweek": "2014-W31",
         "probable": 132,
         "suspected": 55,
@@ -211,6 +1081,61 @@
     },
     {
         "confirmed": 113,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 16,
+                "country": "Guinea",
+                "deaths": 14,
+                "hcw": 1,
+                "probable": 0,
+                "suspected": 0,
+                "total_cases": 16
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 7,
+                "country": "Liberia",
+                "deaths": 38,
+                "hcw": 9,
+                "probable": 62,
+                "suspected": 7,
+                "total_cases": 76
+            },
+            {
+                "centroid": [
+                    8.10532486357,
+                    9.59363567392
+                ],
+                "confirmed": 5,
+                "country": "Nigeria",
+                "deaths": 3,
+                "hcw": 4,
+                "probable": 0,
+                "suspected": 0,
+                "total_cases": 5
+            },
+            {
+                "centroid": [
+                    -11.7921028963,
+                    8.560340924
+                ],
+                "confirmed": 85,
+                "country": "Sierra Leone",
+                "deaths": 34,
+                "hcw": 7,
+                "probable": 0,
+                "suspected": 0,
+                "total_cases": 85
+            }
+        ],
+        "deaths": 89,
         "epiweek": "2014-W32",
         "probable": 62,
         "suspected": 7,
@@ -218,6 +1143,61 @@
     },
     {
         "confirmed": 206,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 31,
+                "country": "Guinea",
+                "deaths": 31,
+                "hcw": 11,
+                "probable": 5,
+                "suspected": 0,
+                "total_cases": 36
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 93,
+                "country": "Liberia",
+                "deaths": 221,
+                "hcw": 46,
+                "probable": 149,
+                "suspected": 35,
+                "total_cases": 277
+            },
+            {
+                "centroid": [
+                    8.10532486357,
+                    9.59363567392
+                ],
+                "confirmed": 2,
+                "country": "Nigeria",
+                "deaths": 0,
+                "hcw": 1,
+                "probable": 0,
+                "suspected": 0,
+                "total_cases": 2
+            },
+            {
+                "centroid": [
+                    -11.7921028963,
+                    8.560340924
+                ],
+                "confirmed": 80,
+                "country": "Sierra Leone",
+                "deaths": 47,
+                "hcw": 17,
+                "probable": 1,
+                "suspected": 0,
+                "total_cases": 81
+            }
+        ],
+        "deaths": 299,
         "epiweek": "2014-W33",
         "probable": 155,
         "suspected": 35,
@@ -225,6 +1205,61 @@
     },
     {
         "confirmed": 342,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 90,
+                "country": "Guinea",
+                "deaths": 79,
+                "hcw": 14,
+                "probable": 2,
+                "suspected": 0,
+                "total_cases": 92
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 90,
+                "country": "Liberia",
+                "deaths": 341,
+                "hcw": 39,
+                "probable": 189,
+                "suspected": 109,
+                "total_cases": 388
+            },
+            {
+                "centroid": [
+                    8.10532486357,
+                    9.59363567392
+                ],
+                "confirmed": 2,
+                "country": "Nigeria",
+                "deaths": 1,
+                "hcw": 0,
+                "probable": 1,
+                "suspected": 0,
+                "total_cases": 3
+            },
+            {
+                "centroid": [
+                    -11.7921028963,
+                    8.560340924
+                ],
+                "confirmed": 160,
+                "country": "Sierra Leone",
+                "deaths": 165,
+                "hcw": 20,
+                "probable": 3,
+                "suspected": 19,
+                "total_cases": 182
+            }
+        ],
+        "deaths": 586,
         "epiweek": "2014-W34",
         "probable": 195,
         "suspected": 128,
@@ -232,6 +1267,74 @@
     },
     {
         "confirmed": 330,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 93,
+                "country": "Guinea",
+                "deaths": 81,
+                "hcw": 8,
+                "probable": 8,
+                "suspected": 1,
+                "total_cases": 102
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 64,
+                "country": "Liberia",
+                "deaths": 138,
+                "hcw": 22,
+                "probable": 155,
+                "suspected": 32,
+                "total_cases": 251
+            },
+            {
+                "centroid": [
+                    8.10532486357,
+                    9.59363567392
+                ],
+                "confirmed": 2,
+                "country": "Nigeria",
+                "deaths": 2,
+                "hcw": 1,
+                "probable": 0,
+                "suspected": 0,
+                "total_cases": 2
+            },
+            {
+                "centroid": [
+                    -14.4681770794,
+                    14.3669795383
+                ],
+                "confirmed": 1,
+                "country": "Senegal",
+                "deaths": 0,
+                "hcw": 0,
+                "probable": 0,
+                "suspected": 0,
+                "total_cases": 1
+            },
+            {
+                "centroid": [
+                    -11.7921028963,
+                    8.560340924
+                ],
+                "confirmed": 170,
+                "country": "Sierra Leone",
+                "deaths": 149,
+                "hcw": 1,
+                "probable": 0,
+                "suspected": 10,
+                "total_cases": 180
+            }
+        ],
+        "deaths": 370,
         "epiweek": "2014-W35",
         "probable": 163,
         "suspected": 43,
@@ -239,6 +1342,61 @@
     },
     {
         "confirmed": 508,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 99,
+                "country": "Guinea",
+                "deaths": 90,
+                "hcw": 3,
+                "probable": 3,
+                "suspected": 0,
+                "total_cases": 102
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 255,
+                "country": "Liberia",
+                "deaths": 362,
+                "hcw": 8,
+                "probable": 157,
+                "suspected": 66,
+                "total_cases": 478
+            },
+            {
+                "centroid": [
+                    8.10532486357,
+                    9.59363567392
+                ],
+                "confirmed": 3,
+                "country": "Nigeria",
+                "deaths": 0,
+                "hcw": 1,
+                "probable": 0,
+                "suspected": 0,
+                "total_cases": 3
+            },
+            {
+                "centroid": [
+                    -11.7921028963,
+                    8.560340924
+                ],
+                "confirmed": 151,
+                "country": "Sierra Leone",
+                "deaths": 89,
+                "hcw": 3,
+                "probable": 0,
+                "suspected": 15,
+                "total_cases": 166
+            }
+        ],
+        "deaths": 541,
         "epiweek": "2014-W36",
         "probable": 160,
         "suspected": 81,
@@ -246,6 +1404,48 @@
     },
     {
         "confirmed": 424,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 69,
+                "country": "Guinea",
+                "deaths": 67,
+                "hcw": 0,
+                "probable": 10,
+                "suspected": 2,
+                "total_cases": 81
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 158,
+                "country": "Liberia",
+                "deaths": 326,
+                "hcw": 0,
+                "probable": 258,
+                "suspected": 165,
+                "total_cases": 581
+            },
+            {
+                "centroid": [
+                    -11.7921028963,
+                    8.560340924
+                ],
+                "confirmed": 197,
+                "country": "Sierra Leone",
+                "deaths": 94,
+                "hcw": 3,
+                "probable": 0,
+                "suspected": 19,
+                "total_cases": 216
+            }
+        ],
+        "deaths": 487,
         "epiweek": "2014-W37",
         "probable": 268,
         "suspected": 186,
@@ -253,6 +1453,48 @@
     },
     {
         "confirmed": 443,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 105,
+                "country": "Guinea",
+                "deaths": 61,
+                "hcw": 2,
+                "probable": 4,
+                "suspected": 2,
+                "total_cases": 111
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 77,
+                "country": "Liberia",
+                "deaths": 84,
+                "hcw": 1,
+                "probable": 229,
+                "suspected": 286,
+                "total_cases": 592
+            },
+            {
+                "centroid": [
+                    -11.7921028963,
+                    8.560340924
+                ],
+                "confirmed": 261,
+                "country": "Sierra Leone",
+                "deaths": 57,
+                "hcw": 0,
+                "probable": 0,
+                "suspected": 41,
+                "total_cases": 302
+            }
+        ],
+        "deaths": 202,
         "epiweek": "2014-W38",
         "probable": 233,
         "suspected": 329,
@@ -260,6 +1502,48 @@
     },
     {
         "confirmed": 405,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 54,
+                "country": "Guinea",
+                "deaths": 10,
+                "hcw": 1,
+                "probable": 3,
+                "suspected": 2,
+                "total_cases": 59
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 45,
+                "country": "Liberia",
+                "deaths": 37,
+                "hcw": 6,
+                "probable": 199,
+                "suspected": 193,
+                "total_cases": 437
+            },
+            {
+                "centroid": [
+                    -11.7921028963,
+                    8.560340924
+                ],
+                "confirmed": 306,
+                "country": "Sierra Leone",
+                "deaths": 17,
+                "hcw": 0,
+                "probable": 0,
+                "suspected": 40,
+                "total_cases": 346
+            }
+        ],
+        "deaths": 64,
         "epiweek": "2014-W39",
         "probable": 202,
         "suspected": 235,
@@ -267,6 +1551,48 @@
     },
     {
         "confirmed": 485,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 94,
+                "country": "Guinea",
+                "deaths": 20,
+                "hcw": 5,
+                "probable": 6,
+                "suspected": 27,
+                "total_cases": 127
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 12,
+                "country": "Liberia",
+                "deaths": 39,
+                "hcw": 12,
+                "probable": 153,
+                "suspected": 186,
+                "total_cases": 351
+            },
+            {
+                "centroid": [
+                    -11.7921028963,
+                    8.560340924
+                ],
+                "confirmed": 379,
+                "country": "Sierra Leone",
+                "deaths": 9,
+                "hcw": 0,
+                "probable": 0,
+                "suspected": 94,
+                "total_cases": 473
+            }
+        ],
+        "deaths": 68,
         "epiweek": "2014-W40",
         "probable": 159,
         "suspected": 307,
@@ -274,6 +1600,48 @@
     },
     {
         "confirmed": 575,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 141,
+                "country": "Guinea",
+                "deaths": 17,
+                "hcw": 1,
+                "probable": 10,
+                "suspected": 60,
+                "total_cases": 211
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 9,
+                "country": "Liberia",
+                "deaths": 13,
+                "hcw": 2,
+                "probable": 116,
+                "suspected": 176,
+                "total_cases": 301
+            },
+            {
+                "centroid": [
+                    -11.7921028963,
+                    8.560340924
+                ],
+                "confirmed": 425,
+                "country": "Sierra Leone",
+                "deaths": 34,
+                "hcw": 0,
+                "probable": 0,
+                "suspected": 86,
+                "total_cases": 511
+            }
+        ],
+        "deaths": 64,
         "epiweek": "2014-W41",
         "probable": 126,
         "suspected": 322,
@@ -281,6 +1649,48 @@
     },
     {
         "confirmed": 10,
+        "countries": [
+            {
+                "centroid": [
+                    -10.9418254246,
+                    10.4385409412
+                ],
+                "confirmed": 0,
+                "country": "Guinea",
+                "deaths": 1,
+                "hcw": 0,
+                "probable": 1,
+                "suspected": 0,
+                "total_cases": 1
+            },
+            {
+                "centroid": [
+                    -9.30784656357,
+                    6.44811846319
+                ],
+                "confirmed": 8,
+                "country": "Liberia",
+                "deaths": 28,
+                "hcw": 3,
+                "probable": 12,
+                "suspected": 22,
+                "total_cases": 42
+            },
+            {
+                "centroid": [
+                    -11.7921028963,
+                    8.560340924
+                ],
+                "confirmed": 2,
+                "country": "Sierra Leone",
+                "deaths": 1,
+                "hcw": 1,
+                "probable": 0,
+                "suspected": 0,
+                "total_cases": 2
+            }
+        ],
+        "deaths": 30,
         "epiweek": "NA",
         "probable": 13,
         "suspected": 22,

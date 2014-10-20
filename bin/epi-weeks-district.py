@@ -86,6 +86,7 @@ for week, values in groupby(data_week, lambda x: x['epiweek']):
 				if i['StatusAsOfCurrentDate'].lower() == "dead":
 					deaths += 1
 					weekDeaths += 1
+					
 				count += 1
 			if case == "Confirmed":
 				district_totals["confirmed"] = count

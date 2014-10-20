@@ -1,6 +1,7 @@
 [
     {
         "confirmed": 0,
+        "deaths": 2,
         "epiweek": "2014-W01",
         "probable": 2,
         "suspected": 0,
@@ -8,6 +9,7 @@
     },
     {
         "confirmed": 8,
+        "deaths": 6,
         "epiweek": "2014-W02",
         "probable": 0,
         "suspected": 1,
@@ -15,6 +17,7 @@
     },
     {
         "confirmed": 0,
+        "deaths": 5,
         "epiweek": "2014-W04",
         "probable": 5,
         "suspected": 0,
@@ -22,6 +25,7 @@
     },
     {
         "confirmed": 0,
+        "deaths": 3,
         "epiweek": "2014-W05",
         "probable": 3,
         "suspected": 0,
@@ -29,6 +33,7 @@
     },
     {
         "confirmed": 8,
+        "deaths": 12,
         "epiweek": "2014-W06",
         "probable": 7,
         "suspected": 0,
@@ -36,6 +41,7 @@
     },
     {
         "confirmed": 0,
+        "deaths": 3,
         "epiweek": "2014-W07",
         "probable": 3,
         "suspected": 0,
@@ -43,6 +49,7 @@
     },
     {
         "confirmed": 0,
+        "deaths": 5,
         "epiweek": "2014-W08",
         "probable": 5,
         "suspected": 0,
@@ -50,6 +57,7 @@
     },
     {
         "confirmed": 1,
+        "deaths": 7,
         "epiweek": "2014-W09",
         "probable": 6,
         "suspected": 0,
@@ -57,6 +65,7 @@
     },
     {
         "confirmed": 11,
+        "deaths": 13,
         "epiweek": "2014-W10",
         "probable": 5,
         "suspected": 0,
@@ -64,6 +73,7 @@
     },
     {
         "confirmed": 11,
+        "deaths": 22,
         "epiweek": "2014-W11",
         "probable": 16,
         "suspected": 0,
@@ -71,6 +81,7 @@
     },
     {
         "confirmed": 11,
+        "deaths": 16,
         "epiweek": "2014-W12",
         "probable": 7,
         "suspected": 2,
@@ -78,6 +89,7 @@
     },
     {
         "confirmed": 23,
+        "deaths": 19,
         "epiweek": "2014-W13",
         "probable": 5,
         "suspected": 0,
@@ -85,6 +97,7 @@
     },
     {
         "confirmed": 23,
+        "deaths": 22,
         "epiweek": "2014-W14",
         "probable": 7,
         "suspected": 0,
@@ -92,6 +105,7 @@
     },
     {
         "confirmed": 37,
+        "deaths": 30,
         "epiweek": "2014-W15",
         "probable": 6,
         "suspected": 2,
@@ -99,6 +113,7 @@
     },
     {
         "confirmed": 16,
+        "deaths": 9,
         "epiweek": "2014-W16",
         "probable": 0,
         "suspected": 0,
@@ -106,6 +121,7 @@
     },
     {
         "confirmed": 10,
+        "deaths": 6,
         "epiweek": "2014-W17",
         "probable": 0,
         "suspected": 0,
@@ -113,6 +129,7 @@
     },
     {
         "confirmed": 3,
+        "deaths": 11,
         "epiweek": "2014-W18",
         "probable": 8,
         "suspected": 0,
@@ -120,6 +137,7 @@
     },
     {
         "confirmed": 19,
+        "deaths": 21,
         "epiweek": "2014-W19",
         "probable": 4,
         "suspected": 1,
@@ -127,6 +145,7 @@
     },
     {
         "confirmed": 6,
+        "deaths": 5,
         "epiweek": "2014-W20",
         "probable": 2,
         "suspected": 0,
@@ -134,6 +153,7 @@
     },
     {
         "confirmed": 22,
+        "deaths": 17,
         "epiweek": "2014-W21",
         "probable": 4,
         "suspected": 0,
@@ -141,6 +161,7 @@
     },
     {
         "confirmed": 39,
+        "deaths": 35,
         "epiweek": "2014-W22",
         "probable": 12,
         "suspected": 1,
@@ -148,6 +169,7 @@
     },
     {
         "confirmed": 32,
+        "deaths": 22,
         "epiweek": "2014-W23",
         "probable": 3,
         "suspected": 2,
@@ -155,6 +177,7 @@
     },
     {
         "confirmed": 91,
+        "deaths": 96,
         "epiweek": "2014-W24",
         "probable": 25,
         "suspected": 6,
@@ -162,6 +185,7 @@
     },
     {
         "confirmed": 111,
+        "deaths": 68,
         "epiweek": "2014-W25",
         "probable": 1,
         "suspected": 7,
@@ -169,6 +193,7 @@
     },
     {
         "confirmed": 69,
+        "deaths": 52,
         "epiweek": "2014-W26",
         "probable": 6,
         "suspected": 2,
@@ -176,6 +201,7 @@
     },
     {
         "confirmed": 91,
+        "deaths": 41,
         "epiweek": "2014-W27",
         "probable": 6,
         "suspected": 5,
@@ -183,6 +209,7 @@
     },
     {
         "confirmed": 132,
+        "deaths": 62,
         "epiweek": "2014-W28",
         "probable": 10,
         "suspected": 10,
@@ -190,6 +217,7 @@
     },
     {
         "confirmed": 83,
+        "deaths": 104,
         "epiweek": "2014-W29",
         "probable": 49,
         "suspected": 24,
@@ -197,6 +225,7 @@
     },
     {
         "confirmed": 169,
+        "deaths": 140,
         "epiweek": "2014-W30",
         "probable": 76,
         "suspected": 27,
@@ -204,6 +233,7 @@
     },
     {
         "confirmed": 136,
+        "deaths": 232,
         "epiweek": "2014-W31",
         "probable": 132,
         "suspected": 55,
@@ -211,6 +241,7 @@
     },
     {
         "confirmed": 113,
+        "deaths": 89,
         "epiweek": "2014-W32",
         "probable": 62,
         "suspected": 7,
@@ -218,6 +249,7 @@
     },
     {
         "confirmed": 206,
+        "deaths": 299,
         "epiweek": "2014-W33",
         "probable": 155,
         "suspected": 35,
@@ -225,6 +257,7 @@
     },
     {
         "confirmed": 342,
+        "deaths": 586,
         "epiweek": "2014-W34",
         "probable": 195,
         "suspected": 128,
@@ -232,6 +265,7 @@
     },
     {
         "confirmed": 330,
+        "deaths": 370,
         "epiweek": "2014-W35",
         "probable": 163,
         "suspected": 43,
@@ -239,6 +273,7 @@
     },
     {
         "confirmed": 508,
+        "deaths": 541,
         "epiweek": "2014-W36",
         "probable": 160,
         "suspected": 81,
@@ -246,6 +281,7 @@
     },
     {
         "confirmed": 424,
+        "deaths": 487,
         "epiweek": "2014-W37",
         "probable": 268,
         "suspected": 186,
@@ -253,6 +289,7 @@
     },
     {
         "confirmed": 443,
+        "deaths": 202,
         "epiweek": "2014-W38",
         "probable": 233,
         "suspected": 329,
@@ -260,6 +297,7 @@
     },
     {
         "confirmed": 405,
+        "deaths": 64,
         "epiweek": "2014-W39",
         "probable": 202,
         "suspected": 235,
@@ -267,6 +305,7 @@
     },
     {
         "confirmed": 485,
+        "deaths": 68,
         "epiweek": "2014-W40",
         "probable": 159,
         "suspected": 307,
@@ -274,6 +313,7 @@
     },
     {
         "confirmed": 575,
+        "deaths": 64,
         "epiweek": "2014-W41",
         "probable": 126,
         "suspected": 322,
@@ -281,6 +321,7 @@
     },
     {
         "confirmed": 10,
+        "deaths": 30,
         "epiweek": "NA",
         "probable": 13,
         "suspected": 22,
