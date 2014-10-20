@@ -12,13 +12,14 @@ layout: default
       </div>
       
       <div class="row">
+      	{% for item in site.categories.situation-report limit:1 %}
         <div class="summary-date col-md-2">
-          October 8, 2014
+        	{{item.date|date:'%B %d, %Y'}}
         </div>
         <div class="summary-narrative col-md-10">
-          <p>The total number of confirmed, probable, and suspected cases in the West African epidemic of Ebola virus disease (EVD) reported up to the end of 5 October 2014 is 8033 with 3865 deaths. Countries affected are Guinea, Liberia, Nigeria, Senegal, Sierra Leone, and the United States of America.</p>
+          <p>{{item.latest}}</p>
         </div>
-        
+        {% endfor %}
       </div>
       
      <div class="row">

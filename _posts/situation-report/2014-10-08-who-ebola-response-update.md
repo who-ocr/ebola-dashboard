@@ -4,6 +4,7 @@ layout: situation-report
 category: situation-report
 date: "2014-10-08 15:00"
 title: "WHO Situation Report"
+latest: "The total number of confirmed, probable, and suspected cases in the West African epidemic of Ebola virus disease (EVD) reported up to the end of 5 October 2014 is 8033 with 3865 deaths. Countries affected are Guinea, Liberia, Nigeria, Senegal, Sierra Leone, and the United States of America."
 ---
 
 The total number of confirmed, probable, and suspected cases (see Annex 1) in the West African epidemic of Ebola virus disease (EVD) reported up to the end of 5 October 2014 (epidemiological week 40) is 8033 with 3879 deaths. Countries affected are Guinea, Liberia, Nigeria, Senegal, Sierra Leone, and the United States of America. A confirmed case of EVD has been reported in Spain , but because the case was confirmed during the week ending 12 October (epidemiological week 41), information on this case will be included in the next Ebola Response Roadmap update. 
