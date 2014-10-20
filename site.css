@@ -564,6 +564,28 @@ td.response-factor {
   padding: 10px;
 }
 
+/* Situation Report
+=====================================================
+*/
+
+.sitrep h4 {
+  color: #777;
+  font-size: 20px;
+  margin: 10px 0;
+  background: none;
+}
+
+.sitrep h5 {
+  color: #777;
+  font-size: 17px;
+  margin: 10px 0;
+}
+.sitrep h6 {
+  color: #777;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
 @media (min-width: 780px) { 
   .navbar-brand {
     font-size: 16px;

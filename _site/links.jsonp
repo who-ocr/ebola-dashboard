@@ -1,8 +1,0 @@
-callback([
-
-  {
-    "text": "About",
-    "href": "/ebola-dashboard//about/"
-  } 
-
-])
