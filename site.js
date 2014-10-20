@@ -3,245 +3,324 @@
 $(document).ready(function() {
 
     var globalData = [{
+        "confirmed": 0,
+        "deaths": 2,
         "epiweek": "2014-W01",
-        "total": 2,
         "probable": 2,
         "suspected": 0,
-        "confirmed": 0
-    }, {
+        "total": 2
+    },
+    {
+        "confirmed": 8,
+        "deaths": 6,
         "epiweek": "2014-W02",
-        "total": 9,
         "probable": 0,
         "suspected": 1,
-        "confirmed": 8
-    }, {
+        "total": 9
+    },
+    {
+        "confirmed": 0,
+        "deaths": 5,
         "epiweek": "2014-W04",
-        "total": 5,
         "probable": 5,
         "suspected": 0,
-        "confirmed": 0
-    }, {
+        "total": 5
+    },
+    {
+        "confirmed": 0,
+        "deaths": 3,
         "epiweek": "2014-W05",
-        "total": 3,
         "probable": 3,
         "suspected": 0,
-        "confirmed": 0
-    }, {
+        "total": 3
+    },
+    {
+        "confirmed": 8,
+        "deaths": 12,
         "epiweek": "2014-W06",
-        "total": 15,
         "probable": 7,
         "suspected": 0,
-        "confirmed": 8
-    }, {
+        "total": 15
+    },
+    {
+        "confirmed": 0,
+        "deaths": 3,
         "epiweek": "2014-W07",
-        "total": 3,
         "probable": 3,
         "suspected": 0,
-        "confirmed": 0
-    }, {
+        "total": 3
+    },
+    {
+        "confirmed": 0,
+        "deaths": 5,
         "epiweek": "2014-W08",
-        "total": 5,
         "probable": 5,
         "suspected": 0,
-        "confirmed": 0
-    }, {
+        "total": 5
+    },
+    {
+        "confirmed": 1,
+        "deaths": 7,
         "epiweek": "2014-W09",
-        "total": 7,
         "probable": 6,
         "suspected": 0,
-        "confirmed": 1
-    }, {
+        "total": 7
+    },
+    {
+        "confirmed": 11,
+        "deaths": 13,
         "epiweek": "2014-W10",
-        "total": 16,
         "probable": 5,
         "suspected": 0,
-        "confirmed": 11
-    }, {
+        "total": 16
+    },
+    {
+        "confirmed": 11,
+        "deaths": 22,
         "epiweek": "2014-W11",
-        "total": 27,
         "probable": 16,
         "suspected": 0,
-        "confirmed": 11
-    }, {
+        "total": 27
+    },
+    {
+        "confirmed": 11,
+        "deaths": 16,
         "epiweek": "2014-W12",
-        "total": 20,
         "probable": 7,
         "suspected": 2,
-        "confirmed": 11
-    }, {
+        "total": 20
+    },
+    {
+        "confirmed": 23,
+        "deaths": 19,
         "epiweek": "2014-W13",
-        "total": 28,
         "probable": 5,
         "suspected": 0,
-        "confirmed": 23
-    }, {
+        "total": 28
+    },
+    {
+        "confirmed": 23,
+        "deaths": 22,
         "epiweek": "2014-W14",
-        "total": 30,
         "probable": 7,
         "suspected": 0,
-        "confirmed": 23
-    }, {
+        "total": 30
+    },
+    {
+        "confirmed": 37,
+        "deaths": 30,
         "epiweek": "2014-W15",
-        "total": 45,
         "probable": 6,
         "suspected": 2,
-        "confirmed": 37
-    }, {
+        "total": 45
+    },
+    {
+        "confirmed": 16,
+        "deaths": 9,
         "epiweek": "2014-W16",
-        "total": 16,
         "probable": 0,
         "suspected": 0,
-        "confirmed": 16
-    }, {
+        "total": 16
+    },
+    {
+        "confirmed": 10,
+        "deaths": 6,
         "epiweek": "2014-W17",
-        "total": 10,
         "probable": 0,
         "suspected": 0,
-        "confirmed": 10
-    }, {
+        "total": 10
+    },
+    {
+        "confirmed": 3,
+        "deaths": 11,
         "epiweek": "2014-W18",
-        "total": 11,
         "probable": 8,
         "suspected": 0,
-        "confirmed": 3
-    }, {
+        "total": 11
+    },
+    {
+        "confirmed": 19,
+        "deaths": 21,
         "epiweek": "2014-W19",
-        "total": 24,
         "probable": 4,
         "suspected": 1,
-        "confirmed": 19
-    }, {
+        "total": 24
+    },
+    {
+        "confirmed": 6,
+        "deaths": 5,
         "epiweek": "2014-W20",
-        "total": 8,
         "probable": 2,
         "suspected": 0,
-        "confirmed": 6
-    }, {
+        "total": 8
+    },
+    {
+        "confirmed": 22,
+        "deaths": 17,
         "epiweek": "2014-W21",
-        "total": 26,
         "probable": 4,
         "suspected": 0,
-        "confirmed": 22
-    }, {
+        "total": 26
+    },
+    {
+        "confirmed": 39,
+        "deaths": 35,
         "epiweek": "2014-W22",
-        "total": 52,
         "probable": 12,
         "suspected": 1,
-        "confirmed": 39
-    }, {
+        "total": 52
+    },
+    {
+        "confirmed": 32,
+        "deaths": 22,
         "epiweek": "2014-W23",
-        "total": 37,
         "probable": 3,
         "suspected": 2,
-        "confirmed": 32
-    }, {
+        "total": 37
+    },
+    {
+        "confirmed": 91,
+        "deaths": 96,
         "epiweek": "2014-W24",
-        "total": 122,
         "probable": 25,
         "suspected": 6,
-        "confirmed": 91
-    }, {
+        "total": 122
+    },
+    {
+        "confirmed": 111,
+        "deaths": 68,
         "epiweek": "2014-W25",
-        "total": 119,
         "probable": 1,
         "suspected": 7,
-        "confirmed": 111
-    }, {
+        "total": 119
+    },
+    {
+        "confirmed": 69,
+        "deaths": 52,
         "epiweek": "2014-W26",
-        "total": 77,
         "probable": 6,
         "suspected": 2,
-        "confirmed": 69
-    }, {
+        "total": 77
+    },
+    {
+        "confirmed": 91,
+        "deaths": 41,
         "epiweek": "2014-W27",
-        "total": 102,
         "probable": 6,
         "suspected": 5,
-        "confirmed": 91
-    }, {
+        "total": 102
+    },
+    {
+        "confirmed": 132,
+        "deaths": 62,
         "epiweek": "2014-W28",
-        "total": 152,
         "probable": 10,
         "suspected": 10,
-        "confirmed": 132
-    }, {
+        "total": 152
+    },
+    {
+        "confirmed": 83,
+        "deaths": 104,
         "epiweek": "2014-W29",
-        "total": 156,
         "probable": 49,
         "suspected": 24,
-        "confirmed": 83
-    }, {
+        "total": 156
+    },
+    {
+        "confirmed": 169,
+        "deaths": 140,
         "epiweek": "2014-W30",
-        "total": 272,
         "probable": 76,
         "suspected": 27,
-        "confirmed": 169
-    }, {
+        "total": 272
+    },
+    {
+        "confirmed": 136,
+        "deaths": 232,
         "epiweek": "2014-W31",
-        "total": 323,
         "probable": 132,
         "suspected": 55,
-        "confirmed": 136
-    }, {
+        "total": 323
+    },
+    {
+        "confirmed": 113,
+        "deaths": 89,
         "epiweek": "2014-W32",
-        "total": 182,
         "probable": 62,
         "suspected": 7,
-        "confirmed": 113
-    }, {
+        "total": 182
+    },
+    {
+        "confirmed": 206,
+        "deaths": 299,
         "epiweek": "2014-W33",
-        "total": 396,
         "probable": 155,
         "suspected": 35,
-        "confirmed": 206
-    }, {
+        "total": 396
+    },
+    {
+        "confirmed": 342,
+        "deaths": 586,
         "epiweek": "2014-W34",
-        "total": 665,
         "probable": 195,
         "suspected": 128,
-        "confirmed": 342
-    }, {
+        "total": 665
+    },
+    {
+        "confirmed": 330,
+        "deaths": 370,
         "epiweek": "2014-W35",
-        "total": 536,
         "probable": 163,
         "suspected": 43,
-        "confirmed": 330
-    }, {
+        "total": 536
+    },
+    {
+        "confirmed": 508,
+        "deaths": 541,
         "epiweek": "2014-W36",
-        "total": 749,
         "probable": 160,
         "suspected": 81,
-        "confirmed": 508
-    }, {
+        "total": 749
+    },
+    {
+        "confirmed": 424,
+        "deaths": 487,
         "epiweek": "2014-W37",
-        "total": 878,
         "probable": 268,
         "suspected": 186,
-        "confirmed": 424
-    }, {
+        "total": 878
+    },
+    {
+        "confirmed": 443,
+        "deaths": 202,
         "epiweek": "2014-W38",
-        "total": 1005,
         "probable": 233,
         "suspected": 329,
-        "confirmed": 443
-    }, {
+        "total": 1005
+    },
+    {
+        "confirmed": 405,
+        "deaths": 64,
         "epiweek": "2014-W39",
-        "total": 842,
         "probable": 202,
         "suspected": 235,
-        "confirmed": 405
-    }, {
+        "total": 842
+    },
+    {
+        "confirmed": 485,
+        "deaths": 68,
         "epiweek": "2014-W40",
-        "total": 951,
         "probable": 159,
         "suspected": 307,
-        "confirmed": 485
-    }, {
+        "total": 951
+    },
+    {
+        "confirmed": 575,
+        "deaths": 64,
         "epiweek": "2014-W41",
-        "total": 1023,
         "probable": 126,
         "suspected": 322,
-        "confirmed": 575
+        "total": 1023
     }];
 
 
@@ -7903,13 +7982,16 @@ $(document).ready(function() {
  	
  	 // Update latest numbers
  	var casesTotal = 0;
+ 	var deathsTotal = 0;
  	$.each(globalData, function(index, value) {
- 	 console.log(value.total);
  	  casesTotal = casesTotal + value.total;
+ 	  deathsTotal = deathsTotal + value.deaths;
  	});
+ 	
 
 
 	$('.summary-cases').empty().append(commaSeparateNumber(casesTotal));
+	$('.summary-deaths').empty().append(commaSeparateNumber(deathsTotal));
 	$('.summary-cases-recent').empty().append(commaSeparateNumber(globalData[globalData.length -1]['total']));
 	
 	
