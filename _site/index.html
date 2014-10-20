@@ -5,9 +5,9 @@
   <meta charset='UTF-8'/>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
   <link rel='alternate' type='application/rss+xml' title='RSS' href='SITEURLGOESHERE/blog.rss' />
-  <script src='/ebola-dashboard//site.js'></script>
-
   
+
+ 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -21,10 +21,14 @@
 
   <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-minimap/v1.0.0/Control.MiniMap.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-minimap/v1.0.0/Control.MiniMap.css' rel='stylesheet' />
+  <script src="http://code.highcharts.com/highcharts.js"></script>
   
   <link rel='shortcut icon' href='/ebola-dashboard//img/favicon.ico' type='image/x-icon' />
   <link href="/ebola-dashboard//css/bootstrap.min.css" rel="stylesheet">
   <link href='/ebola-dashboard//site.css' rel='stylesheet' />
+  
+   <script src='/ebola-dashboard//site.js'></script>
+  
 </head>
 <body>
 
@@ -44,7 +48,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/ebola-dashboard/cases/">Cases</a></li>
-        <li><a href="/ebola-dashboard/response/">Response</a></li>
+        <!--<li><a href="/ebola-dashboard/response/">Response</a></li>-->
         <li><a href="/ebola-dashboard/funds/">Funds</a></li>
         <!--
         <li class="dropdown">
@@ -107,16 +111,18 @@
       </div>
 
       <div class="row">
-        <div class="col-md-8">
-          <div class="summary-curve graph">
+        <div class="col-md-12">
+          <div id="global-epi" class="summary-curve">
             EPI curve
           </div>
         </div>
+        <!--
         <div class="col-md-4">
           <div class="summary-curve map">
             Map
           </div>
         </div>
+        -->
       </div>
 
       <div class="row">
@@ -227,6 +233,7 @@
     </div>
   </div>
 
+<!--
   <div class="jumbotron">
     <div class="container">
       <div class="row">
@@ -499,12 +506,13 @@
   	  
   	</div>
   </div>
+  -->
 
   <div class="jumbotron">
        <div class="container">
           <div class="row">
         <div class="col-md-12">
-          <h2 class="section-title">Fund</h2>
+          <h2 class="section-title">Funds</h2>
          </div>
       </div>
       

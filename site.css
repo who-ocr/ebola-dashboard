@@ -454,7 +454,7 @@ table {
   display: block;
 }
 .summary-curve {
-  height: 200px;
+  height: 300px;
   border: 1px solid #ccc;
   width: 100%;
 }

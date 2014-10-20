@@ -8,9 +8,9 @@ title: 'Ebola Dashboard | World Health Organization'
   <meta charset='UTF-8'/>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
   <link rel='alternate' type='application/rss+xml' title='RSS' href='SITEURLGOESHERE/blog.rss' />
-  <script src='{{site.baseurl}}/site.js'></script>
-
   
+
+ 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -24,10 +24,14 @@ title: 'Ebola Dashboard | World Health Organization'
 
   <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-minimap/v1.0.0/Control.MiniMap.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-minimap/v1.0.0/Control.MiniMap.css' rel='stylesheet' />
+  <script src="http://code.highcharts.com/highcharts.js"></script>
   
   <link rel='shortcut icon' href='{{site.baseurl}}/img/favicon.ico' type='image/x-icon' />
   <link href="{{site.baseurl}}/css/bootstrap.min.css" rel="stylesheet">
   <link href='{{site.baseurl}}/site.css' rel='stylesheet' />
+  
+   <script src='{{site.baseurl}}/site.js'></script>
+  
 </head>
 <body>
 
@@ -47,7 +51,7 @@ title: 'Ebola Dashboard | World Health Organization'
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="{{ site.baseurl }}cases/">Cases</a></li>
-        <li><a href="{{ site.baseurl }}response/">Response</a></li>
+        <!--<li><a href="{{ site.baseurl }}response/">Response</a></li>-->
         <li><a href="{{ site.baseurl }}funds/">Funds</a></li>
         <!--
         <li class="dropdown">
