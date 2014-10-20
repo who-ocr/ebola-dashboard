@@ -457,7 +457,7 @@ table {
   overflow: hidden;
 }
 .global-curve {
-  height: 500px;
+  height: 300px;
   border: 1px solid #ccc;
   width: 100%;
   overflow: hidden;
@@ -519,7 +519,9 @@ td.response-factor {
 .table-labels {
   font-size: 12px;
 }
-
+.leaflet-tile-pane {
+  opacity: 0.6;
+}
 .chart {
   border: 1px solid #ccc;
   height: 200px;
@@ -533,7 +535,7 @@ td.response-factor {
 }
 
 .main-map {
-  height: 500px;
+  height: 300px;
   background: #eee;
   border: 1px solid #ccc;
 }
