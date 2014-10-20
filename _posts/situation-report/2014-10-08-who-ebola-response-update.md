@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 layout: situation-report
 category: situation-report
 date: "2014-10-08 15:00"
