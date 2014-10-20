@@ -1,0 +1,289 @@
+[
+    {
+        "confirmed": 0,
+        "epiweek": "2014-W01",
+        "probable": 2,
+        "suspected": 0,
+        "total": 2
+    },
+    {
+        "confirmed": 8,
+        "epiweek": "2014-W02",
+        "probable": 0,
+        "suspected": 1,
+        "total": 9
+    },
+    {
+        "confirmed": 0,
+        "epiweek": "2014-W04",
+        "probable": 5,
+        "suspected": 0,
+        "total": 5
+    },
+    {
+        "confirmed": 0,
+        "epiweek": "2014-W05",
+        "probable": 3,
+        "suspected": 0,
+        "total": 3
+    },
+    {
+        "confirmed": 8,
+        "epiweek": "2014-W06",
+        "probable": 7,
+        "suspected": 0,
+        "total": 15
+    },
+    {
+        "confirmed": 0,
+        "epiweek": "2014-W07",
+        "probable": 3,
+        "suspected": 0,
+        "total": 3
+    },
+    {
+        "confirmed": 0,
+        "epiweek": "2014-W08",
+        "probable": 5,
+        "suspected": 0,
+        "total": 5
+    },
+    {
+        "confirmed": 1,
+        "epiweek": "2014-W09",
+        "probable": 6,
+        "suspected": 0,
+        "total": 7
+    },
+    {
+        "confirmed": 11,
+        "epiweek": "2014-W10",
+        "probable": 5,
+        "suspected": 0,
+        "total": 16
+    },
+    {
+        "confirmed": 11,
+        "epiweek": "2014-W11",
+        "probable": 16,
+        "suspected": 0,
+        "total": 27
+    },
+    {
+        "confirmed": 11,
+        "epiweek": "2014-W12",
+        "probable": 7,
+        "suspected": 2,
+        "total": 20
+    },
+    {
+        "confirmed": 23,
+        "epiweek": "2014-W13",
+        "probable": 5,
+        "suspected": 0,
+        "total": 28
+    },
+    {
+        "confirmed": 23,
+        "epiweek": "2014-W14",
+        "probable": 7,
+        "suspected": 0,
+        "total": 30
+    },
+    {
+        "confirmed": 37,
+        "epiweek": "2014-W15",
+        "probable": 6,
+        "suspected": 2,
+        "total": 45
+    },
+    {
+        "confirmed": 16,
+        "epiweek": "2014-W16",
+        "probable": 0,
+        "suspected": 0,
+        "total": 16
+    },
+    {
+        "confirmed": 10,
+        "epiweek": "2014-W17",
+        "probable": 0,
+        "suspected": 0,
+        "total": 10
+    },
+    {
+        "confirmed": 3,
+        "epiweek": "2014-W18",
+        "probable": 8,
+        "suspected": 0,
+        "total": 11
+    },
+    {
+        "confirmed": 19,
+        "epiweek": "2014-W19",
+        "probable": 4,
+        "suspected": 1,
+        "total": 24
+    },
+    {
+        "confirmed": 6,
+        "epiweek": "2014-W20",
+        "probable": 2,
+        "suspected": 0,
+        "total": 8
+    },
+    {
+        "confirmed": 22,
+        "epiweek": "2014-W21",
+        "probable": 4,
+        "suspected": 0,
+        "total": 26
+    },
+    {
+        "confirmed": 39,
+        "epiweek": "2014-W22",
+        "probable": 12,
+        "suspected": 1,
+        "total": 52
+    },
+    {
+        "confirmed": 32,
+        "epiweek": "2014-W23",
+        "probable": 3,
+        "suspected": 2,
+        "total": 37
+    },
+    {
+        "confirmed": 91,
+        "epiweek": "2014-W24",
+        "probable": 25,
+        "suspected": 6,
+        "total": 122
+    },
+    {
+        "confirmed": 111,
+        "epiweek": "2014-W25",
+        "probable": 1,
+        "suspected": 7,
+        "total": 119
+    },
+    {
+        "confirmed": 69,
+        "epiweek": "2014-W26",
+        "probable": 6,
+        "suspected": 2,
+        "total": 77
+    },
+    {
+        "confirmed": 91,
+        "epiweek": "2014-W27",
+        "probable": 6,
+        "suspected": 5,
+        "total": 102
+    },
+    {
+        "confirmed": 132,
+        "epiweek": "2014-W28",
+        "probable": 10,
+        "suspected": 10,
+        "total": 152
+    },
+    {
+        "confirmed": 83,
+        "epiweek": "2014-W29",
+        "probable": 49,
+        "suspected": 24,
+        "total": 156
+    },
+    {
+        "confirmed": 169,
+        "epiweek": "2014-W30",
+        "probable": 76,
+        "suspected": 27,
+        "total": 272
+    },
+    {
+        "confirmed": 136,
+        "epiweek": "2014-W31",
+        "probable": 132,
+        "suspected": 55,
+        "total": 323
+    },
+    {
+        "confirmed": 113,
+        "epiweek": "2014-W32",
+        "probable": 62,
+        "suspected": 7,
+        "total": 182
+    },
+    {
+        "confirmed": 206,
+        "epiweek": "2014-W33",
+        "probable": 155,
+        "suspected": 35,
+        "total": 396
+    },
+    {
+        "confirmed": 342,
+        "epiweek": "2014-W34",
+        "probable": 195,
+        "suspected": 128,
+        "total": 665
+    },
+    {
+        "confirmed": 330,
+        "epiweek": "2014-W35",
+        "probable": 163,
+        "suspected": 43,
+        "total": 536
+    },
+    {
+        "confirmed": 508,
+        "epiweek": "2014-W36",
+        "probable": 160,
+        "suspected": 81,
+        "total": 749
+    },
+    {
+        "confirmed": 424,
+        "epiweek": "2014-W37",
+        "probable": 268,
+        "suspected": 186,
+        "total": 878
+    },
+    {
+        "confirmed": 443,
+        "epiweek": "2014-W38",
+        "probable": 233,
+        "suspected": 329,
+        "total": 1005
+    },
+    {
+        "confirmed": 405,
+        "epiweek": "2014-W39",
+        "probable": 202,
+        "suspected": 235,
+        "total": 842
+    },
+    {
+        "confirmed": 485,
+        "epiweek": "2014-W40",
+        "probable": 159,
+        "suspected": 307,
+        "total": 951
+    },
+    {
+        "confirmed": 575,
+        "epiweek": "2014-W41",
+        "probable": 126,
+        "suspected": 322,
+        "total": 1023
+    },
+    {
+        "confirmed": 10,
+        "epiweek": "NA",
+        "probable": 13,
+        "suspected": 22,
+        "total": 45
+    }
+]
