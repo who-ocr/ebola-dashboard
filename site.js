@@ -7862,7 +7862,7 @@ $(document).ready(function() {
     });
 
     L.mapbox.accessToken = 'pk.eyJ1IjoiZGV2c2VlZCIsImEiOiJnUi1mbkVvIn0.018aLhX0Mb0tdtaT2QNe2Q';
-    var map = L.mapbox.map('map', 'devseed.jfe5g7do').setView([8.57, -11.75], 7);
+    var map = L.mapbox.map('map', 'examples.map-20v6611k').setView([8.57, -11.75], 7);
     var cases = L.mapbox.featureLayer();
     map.addLayer(cases);
     map.scrollWheelZoom.disable();
