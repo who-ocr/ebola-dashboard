@@ -14,15 +14,30 @@ lastweek = today - timedelta(days=7)
 data = csv.DictReader(open(inFile, 'rb'), delimiter= ',', quotechar = '"')
 
 # Open geojson
-countryCentroidsFile = open('who-admin2.geojson', "rb").read()
-countryCentroids = json.loads(countryCentroidsFile)
+admin2CentroidsFile = open('who-admin2.geojson', "rb").read()
+admin2Centroids = json.loads(admin2CentroidsFile)
+
+admin1CentroidsFile = open('who-admin1.geojson', "rb").read()
+admin1Centroids = json.loads(admin1CentroidsFile)
 
 def getCentroid(admin0, admin2):
-	for country in countryCentroids['features']:
-		if country['properties']['ADM0_NAME'].lower() == admin0.lower() and country['properties']['ADM2_NAME'].lower() == admin2.lower():
-			lon = country['properties']['CENTER_LON']
-			lat = country['properties']['CENTER_LAT']
-			return [lon,lat]
+	if admin0 == 'Liberia' or admin2 == 'Conakry' or admin2 == 'Dakar':
+		if admin2 == 'Monrovia':
+			return [-10.7215195765,6.3137163044]
+		elif admin2 == 'Dakar':
+			return [17.4467,14.6928]
+		else:
+			for district in admin1Centroids['features']:
+				if district['properties']['ADM0_NAME'].lower() == admin0.lower() and district['properties']['ADM1_NAME'].lower() == admin2.lower():
+					lon = district['properties']['CENTER_LON']
+					lat = district['properties']['CENTER_LAT']
+					return [lon,lat]
+	else: 
+		for district in admin2Centroids['features']:
+			if district['properties']['ADM0_NAME'].lower() == admin0.lower() and district['properties']['ADM2_NAME'].lower() == admin2.lower():
+				lon = district['properties']['CENTER_LON']
+				lat = district['properties']['CENTER_LAT']
+				return [lon,lat]
 
 # the itertools functions need data sorted by key, so first sort by country
 data_country = sorted(data, key=lambda x: x['district'])
@@ -73,7 +88,7 @@ for week, values in groupby(data_week, lambda x: x['epiweek']):
 
 		for case, c in groupby(sorted(dist, key=lambda x: x['EpiCaseDef']), lambda x: x['EpiCaseDef']):
 			count = 0
-			for i in c: 
+			for i in c:
 				district_totals["country"] = i['country']
 				district_totals["centroid"] = getCentroid(i['country'], district)
 				weekTotal += 1
