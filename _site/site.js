@@ -1,5 +1,3 @@
----
----
 $(document).ready(function() {
 
     var globalData = [{
@@ -7098,10 +7096,10 @@ $(document).ready(function() {
 
 
     var iconPath = {
-        'iconUrl': {{ site.baseurl }} + 'img/case-marker-path-grad.png',
+        'iconUrl': /ebola-dashboard/ + 'img/case-marker-path-grad.png',
     };
     var iconFill = {
-        'iconUrl': {{ site.baseurl }} + 'img/case-marker.png',
+        'iconUrl': /ebola-dashboard/ + 'img/case-marker.png',
     };
 
 
@@ -7114,7 +7112,7 @@ $(document).ready(function() {
             if (value.centroid != null) {
 
                 var icon = {
-                    'iconUrl': {{ site.baseurl }} + 'img/case-marker.png',
+                    'iconUrl': /ebola-dashboard/ + 'img/case-marker.png',
                     'iconSize': [value.total_cases, value.total_cases]
                 };
 
