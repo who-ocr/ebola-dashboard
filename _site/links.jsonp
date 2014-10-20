@@ -2,7 +2,7 @@ callback([
 
   {
     "text": "About",
-    "href": "/about/"
+    "href": "/ebola-dashboard//about/"
   } 
 
 ])

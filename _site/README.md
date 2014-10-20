@@ -1,8 +1,6 @@
-Datos.gob.mx - Map creation engine
+Ebola WHO
 =========================================
-Jekyll-powered map creation with CKAN integration
-
-CKAN instance: http://201.175.32.249
+Jekyll-powered dashboard
 
 jekyll serve --w
 
