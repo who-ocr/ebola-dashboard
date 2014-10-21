@@ -7929,7 +7929,7 @@ function commaSeparateNumber(val){
 
         // show the most recent week's cases
         //map.fitBounds(cases.getBounds());
-        $('.week-label').empty().append(globalData[globalData.length - 1]['epiweek']);
+        $('.week-label').empty().append('Week ' + globalData[globalData.length - 1]['epiweek'].slice(-2));
         cases.eachLayer(function(marker) {
             if (marker.options.epiweek === globalData[globalData.length - 1]['epiweek']) {
                 marker.setOpacity(0.7);
@@ -7950,7 +7950,7 @@ function commaSeparateNumber(val){
             $('#slider').slider({
                 value: mapCounter
             });
-            $('.week-label').empty().append(globalData[mapCounter]['epiweek']);
+            $('.week-label').empty().append('Week ' + globalData[mapCounter]['epiweek'].slice(-2));
             cases.eachLayer(function(marker) {
                 if (marker.options.epiweek === globalData[mapCounter]['epiweek']) {
                     marker.setOpacity(0.7);
@@ -7972,7 +7972,7 @@ function commaSeparateNumber(val){
         $("#slider").on("slide", function(event, ui) {
             sliderValue = ui.value;
             
-            $('.week-label').empty().append('Week ' + globalData[sliderValue]['epiweek'].slide(-2));
+            $('.week-label').empty().append('Week ' + globalData[sliderValue]['epiweek'].slice(-2));
             cases.eachLayer(function(marker) {
                 if (marker.options.epiweek === globalData[sliderValue]['epiweek']) {
                     marker.setOpacity(0.7);
