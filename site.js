@@ -7992,7 +7992,7 @@ function commaSeparateNumber(val){
                 $(this).removeClass('playing');
             } else {
                 e.preventDefault();
-                mapTimer = setInterval(mapLoop, 300);
+                mapTimer = setInterval(mapLoop, 150);
                 $(this).addClass('playing');
             }
         });
