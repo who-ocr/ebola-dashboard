@@ -554,6 +554,8 @@ td.response-factor {
   bottom: 10px;
   left: 25px;
   z-index: 100;
+  background: #fff;
+  color: #000;
 }
 .playing {
   background: #999;
