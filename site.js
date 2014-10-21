@@ -8224,7 +8224,7 @@ function commaSeparateNumber(val){
 
                     var icon = {
                         'iconUrl': {{ site.baseurl }} + 'img/case-marker.png',
-                        'iconSize': [Math.sqrt(value.total_cases/0.2), Math.sqrt(value.total_cases/0.2)]
+                        'iconSize': [Math.sqrt(value.total_cases / Math.PI)*2, Math.sqrt(value.total_cases / Math.PI)*2]
                     };
 
                     var markup = '<div class="inner"><b>' + value.total_cases + ' cases</b><br>' + value.district + ', ' + value.country + '</div>';
@@ -8323,7 +8323,7 @@ function commaSeparateNumber(val){
  	
  	
  	
- 	var map = L.mapbox.map('cases-map', 'examples.map-20v6611k').setView([8.57, -11.75], 7);
+ 	var map = L.mapbox.map('cases-map', 'examples.map-20v6611k').setView([8.0, -10.75], 6);
  	map.scrollWheelZoom.disable();
  	var caseTotals = L.mapbox.featureLayer();
  	var recentTotals = L.mapbox.featureLayer();
@@ -8334,7 +8334,7 @@ function commaSeparateNumber(val){
  	
  	      var icon = {
             'iconUrl': {{ site.baseurl }} + 'img/case-marker.png',
-            'iconSize': [value.total / 10, value.total / 10]
+            'iconSize': [Math.sqrt(value.total / Math.PI)*2, Math.sqrt(value.total / Math.PI)*2]
             };
 
         var markup = '<div class="inner"><b>' + value.total + ' total cases</b><br>' + value.district + ', ' + value.country + '</div>';
@@ -8355,7 +8355,7 @@ function commaSeparateNumber(val){
  	
  	      var icon = {
             'iconUrl': {{ site.baseurl }} + 'img/case-marker.png',
-            'iconSize': [value.recent / 10, value.recent / 10]
+            'iconSize': [Math.sqrt(value.recent / Math.PI)*2, Math.sqrt(value.recent / Math.PI)*2]
             };
 
         var markup = '<div class="inner"><b>' + value.recent + ' recent cases</b><br>' + value.district + ', ' + value.country + '</div>';

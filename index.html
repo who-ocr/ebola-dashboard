@@ -65,7 +65,7 @@ layout: default
 	  </div>
 	</div>
 
-      <div class="row">
+<!--       <div class="row">
         <div class="col-md-12">
          <div class="table-responsive">
           <table class="table transmission-table table-responsive">
@@ -169,7 +169,7 @@ layout: default
           </table>
          </div>
         </div>
-      </div>
+      </div> -->
       
       <div class="row">
         <div class="col-md-12">
@@ -463,44 +463,7 @@ layout: default
          </div>
       </div>
       
-       <div class="row">
-        <div class="col-md-3">
-          Target<br>
-          <span class="fund-amount">$260,000,000</span><br>
-          
-        </div>
-        <div class="col-md-3">
-          Received<br>
-          <span class="fund-amount fund-received">$69,149,000</span><br>
-          
-        </div>
-        <div class="col-md-3">
-          Projected<br>
-          <span class="fund-amount fund-projected">$54,450,000</span><br>
-         
-        </div>
-        <div class="col-md-3">
-          Shortfall<br>
-          <span class="fund-amount fund-shortfall">$136,401,000</span><br>
-         
-        </div>
-       </div>
-       
-       <div class="row">
-         <div class="col-md-12">
-           <div class="summary-curve">Donor chart</div>
-         </div>
-       </div>
-       
-      <div class="row">
-         <div class="col-md-6">
-           <div class="summary-curve">Donor chart</div>
-         </div>
-    
-         <div class="col-md-6">
-           <div class="summary-curve">Donor chart</div>
-         </div>
-       </div>
+       {% include fund-shortfall.html %}
        
         <div class="row">
         <div class="col-md-12">
