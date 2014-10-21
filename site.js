@@ -8198,7 +8198,7 @@ function commaSeparateNumber(val){
         });
     });
 
-    if (window.location.href.search('funds') < 0 ) { 
+  
         L.mapbox.accessToken = 'pk.eyJ1IjoiZGV2c2VlZCIsImEiOiJnUi1mbkVvIn0.018aLhX0Mb0tdtaT2QNe2Q';
         var map = L.mapbox.map('map', 'examples.map-20v6611k').setView([8.57, -11.75], 6);
         var cases = L.mapbox.featureLayer();
@@ -8318,8 +8318,6 @@ function commaSeparateNumber(val){
             }
         });
 
-
- 	}
  	
  	
  	
@@ -8327,8 +8325,8 @@ function commaSeparateNumber(val){
  	map.scrollWheelZoom.disable();
  	var caseTotals = L.mapbox.featureLayer();
  	var recentTotals = L.mapbox.featureLayer();
- 	caseTotals.addTo(map);
- 	recentTotals.addTo(map);
+ 	caseTotals.addTo(casesMap);
+ 	recentTotals.addTo(casesMap);
  	 
  	$.each(districtTotals, function(index, value) {
  	
