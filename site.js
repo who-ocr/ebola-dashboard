@@ -8323,7 +8323,7 @@ function commaSeparateNumber(val){
  	
  	
  	
- 	var map = L.mapbox.map('cases-map', 'examples.map-20v6611k').setView([8.57, -11.75], 7);
+ 	var map = L.mapbox.map('cases-map', 'examples.map-20v6611k').setView([8.57, -11.75], 6);
  	map.scrollWheelZoom.disable();
  	var caseTotals = L.mapbox.featureLayer();
  	var recentTotals = L.mapbox.featureLayer();
