@@ -7759,6 +7759,327 @@ $(document).ready(function() {
     }
 ];
 
+
+var districtTotals = [{
+    "centroid": [-10.3048348255, 8.69493972138],
+    "district": "Gueckedou",
+    "country": "Guinea",
+    "total": 367,
+    "recent": 12
+}, {
+    "centroid": [-12.7583542486, 8.73493804628],
+    "district": "Port Loko",
+    "country": "Sierra Leone",
+    "total": 427,
+    "recent": 149
+}, {
+    "centroid": [-13.2516184791, 8.46161143374],
+    "district": "Freetown",
+    "country": "Sierra Leone",
+    "total": 748,
+    "recent": 385
+}, {
+    "centroid": [-10.7177144281, 8.09228705936],
+    "district": "Kailahun",
+    "country": "Sierra Leone",
+    "total": 585,
+    "recent": 13
+}, {
+    "centroid": [-10.7215195765, 6.3137163044],
+    "district": "Monrovia",
+    "country": "Liberia",
+    "total": 1785,
+    "recent": 346
+}, {
+    "centroid": [-9.33932375244, 8.45053527378],
+    "district": "Macenta",
+    "country": "Guinea",
+    "total": 533,
+    "recent": 143
+}, {
+    "centroid": [-10.0272901436, 9.24280287002],
+    "district": "Kissidougo",
+    "country": "Liberia",
+    "total": 10,
+    "recent": 2
+}, {
+    "centroid": [-13.5614691474, 9.62757357497],
+    "district": "Conakry",
+    "country": "Guinea",
+    "total": 229,
+    "recent": 52
+}, {
+    "centroid": [-10.1012791495, 10.5819899535],
+    "district": "Kouroussa",
+    "country": "Liberia",
+    "total": 4,
+    "recent": 0
+}, {
+    "centroid": [-11.0627538709, 10.7299012426],
+    "district": "Dabola",
+    "country": "Guinea",
+    "total": 5,
+    "recent": 0
+}, {
+    "centroid": [-9.85031000872, 7.9952352352],
+    "district": "Lofa",
+    "country": "Liberia",
+    "total": 814,
+    "recent": 61
+}, {
+    "centroid": [-9.64366019073, 6.94376505628],
+    "district": "Bong",
+    "country": "Liberia",
+    "total": 444,
+    "recent": 130
+}, {
+    "centroid": [-10.7262027524, 11.6069674927],
+    "district": "Dinguiraye",
+    "country": "Guinea",
+    "total": 1,
+    "recent": 0
+}, {
+    "centroid": [-11.0499721228, 7.08098748329],
+    "district": "Grand Cape Mount",
+    "country": "Guinea",
+    "total": 30,
+    "recent": 13
+}, {
+    "centroid": [-10.2601725424, 6.52717365125],
+    "district": "Margibi",
+    "country": "Liberia",
+    "total": 602,
+    "recent": 76
+}, {
+    "centroid": [-11.5724206143, 7.32219946466],
+    "district": "Pujehun",
+    "country": "Liberia",
+    "total": 27,
+    "recent": 5
+}, {
+    "centroid": [-13.3591246619, 10.9192552488],
+    "district": "Telimele",
+    "country": "Liberia",
+    "total": 26,
+    "recent": 0
+}, {
+    "centroid": [-14.0545378494, 10.3704523359],
+    "district": "Boffa",
+    "country": "Guinea",
+    "total": 24,
+    "recent": 0
+}, {
+    "centroid": [-11.2257628471, 7.94214556432],
+    "district": "Kenema",
+    "country": "Sierra Leone",
+    "total": 495,
+    "recent": 36
+}, {
+    "centroid": [-11.750688035, 7.9935946161],
+    "district": "Bo",
+    "country": "Sierra Leone",
+    "total": 160,
+    "recent": 54
+}, {
+    "centroid": [-12.8268555724, 9.17121326335],
+    "district": "Kambia",
+    "country": "Liberia",
+    "total": 28,
+    "recent": 13
+}, {
+    "centroid": [-12.1955446453, 9.32328913639],
+    "district": "Bombali",
+    "country": "Sierra Leone",
+    "total": 446,
+    "recent": 208
+}, {
+    "centroid": [-8.76982674319, 6.81673414074],
+    "district": "Nimba",
+    "country": "Liberia",
+    "total": 253,
+    "recent": 10
+}, {
+    "centroid": [-9.81486443353, 6.22457715742],
+    "district": "Grand Bassa",
+    "country": "Liberia",
+    "total": 137,
+    "recent": 20
+}, {
+    "centroid": [-10.3101521433, 7.41827028131],
+    "district": "Gbarpolu",
+    "country": "Guinea",
+    "total": 6,
+    "recent": 4
+}, {
+    "centroid": [-10.8109821157, 6.73275035018],
+    "district": "Bomi",
+    "country": "Liberia",
+    "total": 94,
+    "recent": 14
+}, {
+    "centroid": [-10.9664252552, 8.69471402857],
+    "district": "Kono",
+    "country": "Sierra Leone",
+    "total": 84,
+    "recent": 25
+}, {
+    "centroid": [-12.2848428855, 7.50414610209],
+    "district": "Bonthe",
+    "country": "Sierra Leone",
+    "total": 3,
+    "recent": 0
+}, {
+    "centroid": [-12.4546600261, 8.08506816093],
+    "district": "Moyamba",
+    "country": "Sierra Leone",
+    "total": 99,
+    "recent": 32
+}, {
+    "centroid": [-9.4666501767, 11.6823785627],
+    "district": "Siguiri",
+    "country": "Liberia",
+    "total": 6,
+    "recent": 0
+}, {
+    "centroid": [-11.9021619466, 8.6944297019],
+    "district": "Tonkolili",
+    "country": "Sierra Leone",
+    "total": 150,
+    "recent": 66
+}, {
+    "centroid": [-13.0627260644, 9.41630127096],
+    "district": "Forecariah",
+    "country": "Guinea",
+    "total": 17,
+    "recent": 1
+}, {
+    "centroid": [-8.7967554244, 7.9546695681],
+    "district": "N'Zerekore",
+    "country": "Guniea",
+    "total": 92,
+    "recent": 53
+}, {
+    "centroid": [-9.375629418, 5.86101950752],
+    "district": "Rivercess",
+    "country": "Liberia",
+    "total": 10,
+    "recent": 0
+}, {
+    "centroid": [3.39823109352, 6.4615001567],
+    "district": "Lagos Island",
+    "country": "Liberia",
+    "total": 16,
+    "recent": 0
+}, {
+    "centroid": [-12.6356583491, 10.8964798332],
+    "district": "Pita",
+    "country": "Liberia",
+    "total": 9,
+    "recent": 1
+}, {
+    "centroid": [-9.10432690304, 7.53675677824],
+    "district": "Yomou",
+    "country": "Liberia",
+    "total": 11,
+    "recent": 0
+}, {
+    "centroid": [-13.4939931579, 10.1206853671],
+    "district": "Dubreka",
+    "country": "Guinea",
+    "total": 22,
+    "recent": 1
+}, {
+    "centroid": [-8.21471032562, 5.93345828909],
+    "district": "Grand Gedeh",
+    "country": "Guinea",
+    "total": 3,
+    "recent": 0
+}, {
+    "centroid": [-8.75941753954, 5.34595419259],
+    "district": "Sinoe",
+    "country": "Liberia",
+    "total": 18,
+    "recent": 8
+}, {
+    "centroid": [-7.80101899924, 5.27754359722],
+    "district": "River Gee",
+    "country": "Liberia",
+    "total": 19,
+    "recent": 2
+}, {
+    "centroid": [7.0216484586, 4.7776303994],
+    "district": "Port-Harcourt",
+    "country": "Liberia",
+    "total": 4,
+    "recent": 0
+}, {
+    "centroid": [17.4467, 14.6928],
+    "district": "Dakar",
+    "country": "Guinea",
+    "total": 1,
+    "recent": 0
+}, {
+    "centroid": [-9.10499016737, 9.26366627328],
+    "district": "Kerouane",
+    "country": "Liberia",
+    "total": 45,
+    "recent": 22
+}, {
+    "centroid": [-13.3159837156, 9.73536465349],
+    "district": "Coyah",
+    "country": "Guinea",
+    "total": 40,
+    "recent": 30
+}, {
+    "centroid": [-7.77007155359, 4.72127936981],
+    "district": "Maryland",
+    "country": "Guinea",
+    "total": 8,
+    "recent": 0
+}, {
+    "centroid": [-12.1402794081, 10.9131793497],
+    "district": "Dalaba",
+    "country": "Guinea",
+    "total": 9,
+    "recent": 3
+}, {
+    "centroid": [-12.7488142039, 10.0983904021],
+    "district": "Kindia",
+    "country": "Liberia",
+    "total": 1,
+    "recent": 0
+}, {
+    "centroid": [-8.19794186898, 4.79929196355],
+    "district": "Grand Kru",
+    "country": "Guinea",
+    "total": 26,
+    "recent": 10
+}, {
+    "centroid": [-8.33509894591, 8.89499658308],
+    "district": "Beyla",
+    "country": "Guinea",
+    "total": 8,
+    "recent": 6
+}, {
+    "centroid": [-8.32663691342, 7.99102302963],
+    "district": "Lola",
+    "country": "Liberia",
+    "total": 11,
+    "recent": 11
+}, {
+    "centroid": [-14.3617687695, 11.0893838793],
+    "district": "Boke",
+    "country": "Guinea",
+    "total": 1,
+    "recent": 1
+}, {
+    "centroid": [-11.8048918743, 10.4930688004],
+    "district": "Mamou",
+    "country": "Guinea",
+    "total": 1,
+    "recent": 1
+}];
+
 var probableArray = [];
 var suspectedArray = [];
 var confirmedArray = [];
@@ -7911,7 +8232,7 @@ function commaSeparateNumber(val){
                     var marker = L.marker([value.centroid[1], value.centroid[0]], {
                         'epiweek': epiweek,
                         'epiWeekId': index,
-                        'opacity': 0.7
+                        'opacity': 0.4
                     });
 
                     marker.setIcon(L.icon(icon));
@@ -7932,7 +8253,7 @@ function commaSeparateNumber(val){
         $('.week-label').empty().append('Week ' + globalData[globalData.length - 1]['epiweek'].slice(-2));
         cases.eachLayer(function(marker) {
             if (marker.options.epiweek === globalData[globalData.length - 1]['epiweek']) {
-                marker.setOpacity(0.7);
+                marker.setOpacity(0.4);
                 marker._icon.style.display = '';
             } else {
                 marker._icon.style.display = 'none';
@@ -7953,7 +8274,7 @@ function commaSeparateNumber(val){
             $('.week-label').empty().append('Week ' + globalData[mapCounter]['epiweek'].slice(-2));
             cases.eachLayer(function(marker) {
                 if (marker.options.epiweek === globalData[mapCounter]['epiweek']) {
-                    marker.setOpacity(0.7);
+                    marker.setOpacity(0.4);
                     marker._icon.style.display = '';
                 } else {
                     marker._icon.style.display = 'none';
@@ -7975,7 +8296,7 @@ function commaSeparateNumber(val){
             $('.week-label').empty().append('Week ' + globalData[sliderValue]['epiweek'].slice(-2));
             cases.eachLayer(function(marker) {
                 if (marker.options.epiweek === globalData[sliderValue]['epiweek']) {
-                    marker.setOpacity(0.7);
+                    marker.setOpacity(0.4);
                     marker._icon.style.display = '';
                 } else {
                     marker._icon.style.display = 'none';
@@ -7999,6 +8320,58 @@ function commaSeparateNumber(val){
 
 
  	}
+ 	
+ 	
+ 	
+ 	var map = L.mapbox.map('cases-map', 'examples.map-20v6611k').setView([8.57, -11.75], 7);
+ 	map.scrollWheelZoom.disable();
+ 	var caseTotals = L.mapbox.featureLayer();
+ 	var recentTotals = L.mapbox.featureLayer();
+ 	caseTotals.addTo(map);
+ 	recentTotals.addTo(map);
+ 	 
+ 	$.each(districtTotals, function(index, value) {
+ 	
+ 	      var icon = {
+            'iconUrl': {{ site.baseurl }} + 'img/case-marker.png',
+            'iconSize': [value.total / 10, value.total / 10]
+            };
+
+        var markup = '<div class="inner"><b>' + value.total + ' total cases</b><br>' + value.district + ', ' + value.country + '</div>';
+
+        var marker = L.marker([value.centroid[1], value.centroid[0]], {
+            'opacity': 0.4
+        });
+        
+         marker.setIcon(L.icon(icon));
+                    marker.bindPopup(markup, {
+                        autoPan: true
+                    });
+        caseTotals.addLayer(marker);
+
+ 	});
+ 	
+ 	$.each(districtTotals, function(index, value) {
+ 	
+ 	      var icon = {
+            'iconUrl': {{ site.baseurl }} + 'img/case-marker.png',
+            'iconSize': [value.recent / 10, value.recent / 10]
+            };
+
+        var markup = '<div class="inner"><b>' + value.recent + ' recent cases</b><br>' + value.district + ', ' + value.country + '</div>';
+
+        var marker = L.marker([value.centroid[1], value.centroid[0]], {
+            'opacity': 0.8
+        });
+        
+         marker.setIcon(L.icon(icon));
+                    marker.bindPopup(markup, {
+                        autoPan: true
+                    });
+        recentTotals.addLayer(marker);
+
+ 	});
+ 	
  	
  	 // Update latest numbers
  	var casesTotal = 0;

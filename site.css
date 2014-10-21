@@ -571,6 +571,11 @@ td.response-factor {
   padding: 10px;
 }
 
+#cases-map {
+   background: #eee;
+   border: 1px solid #ccc;
+}
+
 /* Situation Report
 =====================================================
 */
