@@ -7751,18 +7751,13 @@ $(document).ready(function() {
     }
 ];
 
-
-    var probableArray = [];
-    var suspectedArray = [];
-    var confirmedArray = [];
-    var weeksArray = [];
-
-    $.each(globalData, function(index, value) {
-        probableArray.push(value.probable);
-        suspectedArray.push(value.suspected);
-        confirmedArray.push(value.confirmed);
-        weeksArray.push(value.epiweek.slice(-2));
-    });
+   
+function commaSeparateNumber(val){
+    while (/(\d+)(\d{3})/.test(val.toString())){
+      val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
+    }
+    return val;
+  }
 
 
     $(function() {
@@ -7861,101 +7856,61 @@ $(document).ready(function() {
         });
     });
 
-    L.mapbox.accessToken = 'pk.eyJ1IjoiZGV2c2VlZCIsImEiOiJnUi1mbkVvIn0.018aLhX0Mb0tdtaT2QNe2Q';
-    var map = L.mapbox.map('map', 'examples.map-20v6611k').setView([8.57, -11.75], 7);
-    var cases = L.mapbox.featureLayer();
-    map.addLayer(cases);
-    map.scrollWheelZoom.disable();
+    if (window.location.href.search('funds') < 0 ) { 
+        L.mapbox.accessToken = 'pk.eyJ1IjoiZGV2c2VlZCIsImEiOiJnUi1mbkVvIn0.018aLhX0Mb0tdtaT2QNe2Q';
+        var map = L.mapbox.map('map', 'examples.map-20v6611k').setView([8.57, -11.75], 7);
+        var cases = L.mapbox.featureLayer();
+        map.addLayer(cases);
+        map.scrollWheelZoom.disable();
 
 
-    var iconPath = {
-        'iconUrl': {{ site.baseurl }} + 'img/case-marker-path-grad.png',
-    };
-    var iconFill = {
-        'iconUrl': {{ site.baseurl }} + 'img/case-marker.png',
-    };
+        var iconPath = {
+            'iconUrl': {{ site.baseurl }} + 'img/case-marker-path-grad.png',
+        };
+        var iconFill = {
+            'iconUrl': {{ site.baseurl }} + 'img/case-marker.png',
+        };
 
 
-    var epiweek;
-    $.each(districtData, function(index, value) {
-        //console.log(value);
-        epiweek = value.epiweek;
-        $.each(value.districts, function(index, value) {
-            //console.log(value.centroid[1]);
-            if (value.centroid != null) {
+        var epiweek;
+        $.each(districtData, function(index, value) {
+            //console.log(value);
+            epiweek = value.epiweek;
+            $.each(value.districts, function(index, value) {
+                //console.log(value.centroid[1]);
+                if (value.centroid != null) {
 
-                var icon = {
-                    'iconUrl': {{ site.baseurl }} + 'img/case-marker.png',
-                    'iconSize': [value.total_cases, value.total_cases]
-                };
+                    var icon = {
+                        'iconUrl': {{ site.baseurl }} + 'img/case-marker.png',
+                        'iconSize': [value.total_cases, value.total_cases]
+                    };
 
-                var markup = '<div class="inner"><b>' + value.total_cases + ' cases</b><br>' + value.district + ', ' + value.country + '</div>';
+                    var markup = '<div class="inner"><b>' + value.total_cases + ' cases</b><br>' + value.district + ', ' + value.country + '</div>';
 
-                var marker = L.marker([value.centroid[1], value.centroid[0]], {
-                    'epiweek': epiweek,
-                    'epiWeekId': index,
-                    'opacity': 0.7
-                });
+                    var marker = L.marker([value.centroid[1], value.centroid[0]], {
+                        'epiweek': epiweek,
+                        'epiWeekId': index,
+                        'opacity': 0.7
+                    });
 
-                marker.setIcon(L.icon(icon));
-                marker.bindPopup(markup, {
-                    autoPan: true
-                });
-                cases.addLayer(marker);
-                marker._icon.style.display = 'none';
-            }
+                    marker.setIcon(L.icon(icon));
+                    marker.bindPopup(markup, {
+                        autoPan: true
+                    });
+                    cases.addLayer(marker);
+                    marker._icon.style.display = 'none';
+                }
 
+            });
         });
-    });
 
-    // show the most recent week's cases
-    //map.fitBounds(cases.getBounds());
-    $('.week-label').empty().append(globalData[globalData.length - 1]['epiweek']);
-    cases.eachLayer(function(marker) {
-        if (marker.options.epiweek === globalData[globalData.length - 1]['epiweek']) {
-            marker.setOpacity(0.7);
-            marker._icon.style.display = '';
-        } else {
-            marker._icon.style.display = 'none';
-            //marker.setIcon(L.icon(iconPath));
-        }
-    });
 
-    var mapCounter = 0;
-    var mapTimer;
 
-    function mapLoop() {
-        if (mapCounter == globalData.length - 1) {
-            mapCounter = 0;
-        }
-        $('#slider').slider({
-            value: mapCounter
-        });
-        $('.week-label').empty().append(globalData[mapCounter]['epiweek']);
+        // show the most recent week's cases
+        //map.fitBounds(cases.getBounds());
+        $('.week-label').empty().append(globalData[globalData.length - 1]['epiweek']);
         cases.eachLayer(function(marker) {
-            if (marker.options.epiweek === globalData[mapCounter]['epiweek']) {
-                marker.setOpacity(0.7);
-                marker._icon.style.display = '';
-            } else {
-                marker._icon.style.display = 'none';
-            }
-        });
-        mapCounter++;
-    }
-
-    //console.log(markerLayer);
-    $("#slider").slider({
-        max: globalData.length - 1,
-        value: globalData.length - 1
-    });
-
-    var sliderValue;
-    $("#slider").on("slide", function(event, ui) {
-        sliderValue = ui.value;
-        
-        $('.week-label').empty().append(globalData[sliderValue]['epiweek']);
-        cases.eachLayer(function(marker) {
-            if (marker.options.epiweek === globalData[sliderValue]['epiweek']) {
+            if (marker.options.epiweek === globalData[globalData.length - 1]['epiweek']) {
                 marker.setOpacity(0.7);
                 marker._icon.style.display = '';
             } else {
@@ -7963,22 +7918,66 @@ $(document).ready(function() {
                 //marker.setIcon(L.icon(iconPath));
             }
         });
-    });
 
+        var mapCounter = 0;
+        var mapTimer;
 
-    $("#play-btn").click(function(e) {
-        e.preventDefault();
-        if ($(this).hasClass('playing')) {
-            clearInterval(mapTimer);
-            $(this).removeClass('playing');
-        } else {
-            e.preventDefault();
-            mapTimer = setInterval(mapLoop, 300);
-            $(this).addClass('playing');
+        function mapLoop() {
+            if (mapCounter == globalData.length - 1) {
+                mapCounter = 0;
+            }
+            $('#slider').slider({
+                value: mapCounter
+            });
+            $('.week-label').empty().append(globalData[mapCounter]['epiweek']);
+            cases.eachLayer(function(marker) {
+                if (marker.options.epiweek === globalData[mapCounter]['epiweek']) {
+                    marker.setOpacity(0.7);
+                    marker._icon.style.display = '';
+                } else {
+                    marker._icon.style.display = 'none';
+                }
+            });
+            mapCounter++;
         }
-    });
+        
+        //console.log(markerLayer);
+        $("#slider").slider({
+            max: globalData.length - 1,
+            value: globalData.length - 1
+        });
 
- 	
+        var sliderValue;
+        $("#slider").on("slide", function(event, ui) {
+            sliderValue = ui.value;
+            
+            $('.week-label').empty().append(globalData[sliderValue]['epiweek']);
+            cases.eachLayer(function(marker) {
+                if (marker.options.epiweek === globalData[sliderValue]['epiweek']) {
+                    marker.setOpacity(0.7);
+                    marker._icon.style.display = '';
+                } else {
+                    marker._icon.style.display = 'none';
+                    //marker.setIcon(L.icon(iconPath));
+                }
+            });
+        });
+
+
+        $("#play-btn").click(function(e) {
+            e.preventDefault();
+            if ($(this).hasClass('playing')) {
+                clearInterval(mapTimer);
+                $(this).removeClass('playing');
+            } else {
+                e.preventDefault();
+                mapTimer = setInterval(mapLoop, 300);
+                $(this).addClass('playing');
+            }
+        });
+
+
+ 	}
  	
  	 // Update latest numbers
  	var casesTotal = 0;
@@ -7995,11 +7994,6 @@ $(document).ready(function() {
 	$('.summary-cases-recent').empty().append(commaSeparateNumber(globalData[globalData.length -1]['total']));
 	
 	
-	function commaSeparateNumber(val){
-    while (/(\d+)(\d{3})/.test(val.toString())){
-      val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
-    }
-    return val;
-  }
+	
 
 });
