@@ -7879,7 +7879,7 @@ function commaSeparateNumber(val){
 
     if (window.location.href.search('funds') < 0 ) { 
         L.mapbox.accessToken = 'pk.eyJ1IjoiZGV2c2VlZCIsImEiOiJnUi1mbkVvIn0.018aLhX0Mb0tdtaT2QNe2Q';
-        var map = L.mapbox.map('map', 'examples.map-20v6611k').setView([8.57, -11.75], 7);
+        var map = L.mapbox.map('map', 'examples.map-20v6611k').setView([8.57, -11.75], 6);
         var cases = L.mapbox.featureLayer();
         map.addLayer(cases);
         map.scrollWheelZoom.disable();
@@ -7903,7 +7903,7 @@ function commaSeparateNumber(val){
 
                     var icon = {
                         'iconUrl': {{ site.baseurl }} + 'img/case-marker.png',
-                        'iconSize': [value.total_cases, value.total_cases]
+                        'iconSize': [Math.sqrt(value.total_cases/0.2), Math.sqrt(value.total_cases/0.2)]
                     };
 
                     var markup = '<div class="inner"><b>' + value.total_cases + ' cases</b><br>' + value.district + ', ' + value.country + '</div>';
