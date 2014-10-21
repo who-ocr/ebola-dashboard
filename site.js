@@ -7972,7 +7972,7 @@ function commaSeparateNumber(val){
         $("#slider").on("slide", function(event, ui) {
             sliderValue = ui.value;
             
-            $('.week-label').empty().append(globalData[sliderValue]['epiweek']);
+            $('.week-label').empty().append('Week ' + globalData[sliderValue]['epiweek'].slide(-2));
             cases.eachLayer(function(marker) {
                 if (marker.options.epiweek === globalData[sliderValue]['epiweek']) {
                     marker.setOpacity(0.7);
