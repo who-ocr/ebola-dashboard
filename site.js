@@ -18,6 +18,14 @@ $(document).ready(function() {
         "suspected": 1,
         "total": 9
     },
+	{
+	"confirmed": 10,
+	"deaths": 30,
+	"epiweek": "2014-W03",
+	"probable": 13,
+	"suspected": 22,
+	"total": 45
+	},
     {
         "confirmed": 0,
         "deaths": 5,
@@ -7744,12 +7752,25 @@ $(document).ready(function() {
                 "total_cases": 3
             }
         ],
-        "epiweek": "NA",
+        "epiweek": "2014-W03",
         "probable": 13,
         "suspected": 22,
         "total": 45
     }
 ];
+
+var probableArray = [];
+var suspectedArray = [];
+var confirmedArray = [];
+var weeksArray = [];
+
+
+$.each(globalData, function(index, value) {
+  probableArray.push(value.probable);
+  suspectedArray.push(value.suspected);
+  confirmedArray.push(value.confirmed);
+  weeksArray.push(value.epiweek.slice(-2));
+});
 
    
 function commaSeparateNumber(val){

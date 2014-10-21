@@ -543,7 +543,11 @@ td.response-factor {
   background: #eee;
 }
 #slider {
-  margin: 0 0 20px 0;
+  position: absolute;
+  top: 20px;
+  right: 160px;
+  z-index: 100;
+  width: 40%;
 }
 #play-btn {
   position: absolute;
@@ -558,7 +562,7 @@ td.response-factor {
 .week-label {
   position: absolute;
   right: 30px;
-  top: 45px;
+  top: 10px;
   z-index: 100;
   background: #fff;
   padding: 10px;
