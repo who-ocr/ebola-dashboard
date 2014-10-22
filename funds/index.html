@@ -7,11 +7,7 @@ layout: default
     -webkit-transition: width 1.5s ease-in-out;
     transition: width 1.5s ease-in-out;
   }
-  .progress-bar-warning {
-/*    background-color: #d86422;
-*/  }
   .progress {
-
     width: 100%;
     height: 35px;
     background: #ddd;
@@ -26,28 +22,23 @@ layout: default
 
 
 </style>
-  <div class="jumbotron">
+ 
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <h2 class="section-title">Funds</h2>
         </div>
-      </div>
+      
 
       {% include fund-shortfall.html %}
 
     </div>
-  </div>
-
-  <div class="jumbotron">
-    <div class="container">
+  
+  
       <div class="row">
-        <div class="col-md-12">
+       <div class="col-md-12">
           <h2 class="section-title">Critical Funds</h2>
         </div>
-      </div>
-
-      <div class="row">
         <div class="col-md-12">
           <table class="table table-bordered" style="border-top: none; border-bottom: none;">
             <tr>
@@ -204,8 +195,9 @@ layout: default
       </div>
 
 
-      <div class="section section-lead">
-        <div class="container">
+      <div class="row">
+       <div class="col-md-12">
+       
           <h2 class="section-title">Contributions to the response</h2>
 
           <div class="tab-content">
@@ -731,7 +723,7 @@ layout: default
         </div>
       </div>
     </div>
-  </div>
+
   <script>
    var fundingData = {
     "contributions": [
