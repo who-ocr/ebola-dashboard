@@ -57,7 +57,7 @@
 <script>
    var getFunds = await('funds');
 
-   $.ajax('/ebola-dashboard/data/funding.json', {
+   $.ajax('{{site.baseurl}}/data/funding.json', {
       success: function(data){ getFunds.keep('funds', data) },
       error: function(err) { getFunds.fail(err) }
     })
