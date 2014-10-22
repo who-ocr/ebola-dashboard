@@ -85,6 +85,9 @@ h3 {
     color: #fff !important;
     font-size: 14px;
     display: block;
+    padding: 15px 0 0 50px;
+    margin: 0 0 0 15px;
+    background: url("img/who-icon.png") left center no-repeat;
 }
 .navbar-default {
     background-color: #008dc9;
@@ -104,6 +107,9 @@ h3 {
     max-height: 400px;
     overflow-y: scroll;
     display: none;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
 }
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:hover, 
