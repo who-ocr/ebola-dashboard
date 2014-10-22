@@ -54,6 +54,7 @@ $(document).ready(function() {
         xAxis: {
             categories: weeksArray,
             tickInterval: 4,
+
             title: {
                 text: 'Epidemic week',
                 style: {
@@ -133,7 +134,6 @@ $(document).ready(function() {
             color: '#F0C1A5',
         }]
     });
-
 
      // Update latest numbers
      var casesTotal = 0;

@@ -116,7 +116,11 @@ SOFTWARE.
         // timeout guarantees cb gets
         // executed after return
         var thisProm = this;
+<<<<<<< HEAD
         setTimeout(function(){        
+=======
+        setTimeout(function(){
+>>>>>>> Use await for getting pulling in jsons
           if (event === 'resolve') {
             cb.call(ctx);
           }
@@ -518,4 +522,7 @@ SOFTWARE.
     window.await = await;
   }
 })();
+<<<<<<< HEAD
 
+=======
+>>>>>>> Use await for getting pulling in jsons
