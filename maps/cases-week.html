@@ -7778,14 +7778,6 @@ $(document).ready(function() {
         map.scrollWheelZoom.disable();
 
 
-        var iconPath = {
-            'iconUrl': {{ site.baseurl }} + 'img/case-marker-path-grad.png',
-        };
-        var iconFill = {
-            'iconUrl': {{ site.baseurl }} + 'img/case-marker.png',
-        };
-
-
         var epiweek;
         $.each(districtData, function(index, value) {
             //console.log(value);
@@ -7794,45 +7786,46 @@ $(document).ready(function() {
                 //console.log(value.centroid[1]);
                 if (value.centroid != null) {
 
-                    var icon = {
-                        'iconUrl': {{ site.baseurl }} + 'img/case-marker.png',
-                        'iconSize': [value.total_cases / 2, value.total_cases / 2]
-                    };
-
                     var markup = '<div class="inner"><b>' + value.total_cases + ' cases</b><br>' + value.district + ', ' + value.country + '</div>';
 
-                    var marker = L.marker([value.centroid[1], value.centroid[0]], {
+                    var marker = L.circleMarker([value.centroid[1], value.centroid[0]], {
+                        'radius': value.total_cases / 4, 
+                        'opacity': 0, 
+                        'color': '#d86422', 
+                        'fillOpacity': 0.8,
                         'epiweek': epiweek,
-                        'epiWeekId': index,
-                        'opacity': 0.7
+                        'epiWeekId': index
                     });
 
-                    marker.setIcon(L.icon(icon));
+                   
                     marker.bindPopup(markup, {
                         autoPan: true
                     });
                     cases.addLayer(marker);
-                    marker._icon.style.display = 'none';
+                    
                 }
 
             });
         });
 
 
+		console.log(cases);
 
         // show the most recent week's cases
-        //map.fitBounds(cases.getBounds());
+    
         $('.week-label').empty().append('Week ' + globalData[globalData.length - 1]['epiweek'].slice(-2));
         cases.eachLayer(function(marker) {
             if (marker.options.epiweek === globalData[globalData.length - 1]['epiweek']) {
-                marker.setOpacity(0.7);
-                marker._icon.style.display = '';
+                marker.setStyle({'fillOpacity': 0.7, 'opacity': 0, 'clickable': true});
             } else {
-                marker._icon.style.display = 'none';
-                //marker.setIcon(L.icon(iconPath));
+                marker.setStyle({'fillOpacity': 0, 'opacity': 0, 'clickable': false});
+                
+               
             }
         });
-
+        
+         
+         
         var mapCounter = 0;
         var mapTimer;
 
@@ -7846,16 +7839,15 @@ $(document).ready(function() {
             $('.week-label').empty().append('Week ' + globalData[mapCounter]['epiweek'].slice(-2));
             cases.eachLayer(function(marker) {
                 if (marker.options.epiweek === globalData[mapCounter]['epiweek']) {
-                    marker.setOpacity(0.7);
-                    marker._icon.style.display = '';
+                  marker.setStyle({'fillOpacity': 0.7, 'opacity': 0, 'clickable': true});
                 } else {
-                    marker._icon.style.display = 'none';
+                  marker.setStyle({'fillOpacity': 0, 'opacity': 0, 'clickable': false});
                 }
             });
             mapCounter++;
         }
         
-        //console.log(markerLayer);
+        
         $("#slider").slider({
             max: globalData.length - 1,
             value: globalData.length - 1
@@ -7868,11 +7860,9 @@ $(document).ready(function() {
             $('.week-label').empty().append('Week ' + globalData[sliderValue]['epiweek'].slice(-2));
             cases.eachLayer(function(marker) {
                 if (marker.options.epiweek === globalData[sliderValue]['epiweek']) {
-                    marker.setOpacity(0.7);
-                    marker._icon.style.display = '';
+                   marker.setStyle({'fillOpacity': 0.7, 'opacity': 0, 'clickable': true});
                 } else {
-                    marker._icon.style.display = 'none';
-                    //marker.setIcon(L.icon(iconPath));
+                   marker.setStyle({'fillOpacity': 0, 'opacity': 0, 'clickable': false});
                 }
             });
         });
