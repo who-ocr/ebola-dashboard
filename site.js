@@ -7,12 +7,12 @@ $(document).ready(function() {
     $.ajax('data/epi-weeks.json', {
       success: function(data){ serverData.keep('globalData', data) },
       error: function(err) { getThings.fail(err) }
-    })
+  })
 
     $.ajax('data/district-centroids.json', {
       success: function(data){ serverData.keep('districtTotals', data) },
       error: function(err) { getThings.fail(err) }
-    })
+  })
 
     serverData.then(function(data) {
 
@@ -40,102 +40,99 @@ $(document).ready(function() {
           return val;
       }
 
-
-      $(function() {
-        $('#global-epi').highcharts({
-            chart: {
-                type: 'column',
-                backgroundColor: '#eee',
-                marginTop: 20,
-                marginRight: 0,
-                marginLeft: 70,
-            },
+      $('#global-epi').highcharts({
+        chart: {
+            type: 'column',
+            backgroundColor: '#eee',
+            marginTop: 20,
+            marginRight: 0,
+            marginLeft: 70,
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: weeksArray,
+            tickInterval: 4,
             title: {
-                text: ''
-            },
-            xAxis: {
-                categories: weeksArray,
-                tickInterval: 4,
-                title: {
-                    text: 'Epidemic week',
-                    style: {
-                        fontSize: '11px',
-                        color: '#999'
-                    }
+                text: 'Epidemic week',
+                style: {
+                    fontSize: '11px',
+                    color: '#999'
+                }
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Cases',
+                style: {
+                    fontSize: '11px',
+                    color: '#999'
                 }
             },
-            yAxis: {
-                min: 0,
-                title: {
-                    text: 'Cases',
-                    style: {
-                        fontSize: '11px',
-                        color: '#999'
-                    }
-                },
-                stackLabels: {
+            stackLabels: {
+                enabled: false,
+                style: {
+                    fontWeight: 'bold',
+                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                }
+            }
+        },
+        legend: {
+            align: 'right',
+            x: -800,
+            verticalAlign: 'top',
+            y: 0,
+            floating: true,
+            backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+            borderColor: '#CCC',
+            borderWidth: 1,
+            shadow: false,
+            enabled: false
+        },
+        credits: {
+            enabled: false
+        },
+        tooltip: {
+            formatter: function() {
+                return '<b>Epidemic week ' + this.x + '</b><br/>' +
+                this.series.name + ': ' + this.y + '<br/>' +
+                'Total: ' + this.point.stackTotal;
+            }
+        },
+        plotOptions: {
+            series: {
+                pointPadding: 0,
+                groupPadding: 0,
+                borderWidth: 0,
+                shadow: false
+            },
+            column: {
+                stacking: 'normal',
+                dataLabels: {
                     enabled: false,
+                    color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
                     style: {
-                        fontWeight: 'bold',
-                        color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                        textShadow: '0 0 3px black, 0 0 3px black'
                     }
                 }
-            },
-            legend: {
-                align: 'right',
-                x: -800,
-                verticalAlign: 'top',
-                y: 0,
-                floating: true,
-                backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
-                borderColor: '#CCC',
-                borderWidth: 1,
-                shadow: false,
-                enabled: false
-            },
-            credits: {
-                enabled: false
-            },
-            tooltip: {
-                formatter: function() {
-                    return '<b>Epidemic week ' + this.x + '</b><br/>' +
-                    this.series.name + ': ' + this.y + '<br/>' +
-                    'Total: ' + this.point.stackTotal;
-                }
-            },
-            plotOptions: {
-                series: {
-                    pointPadding: 0,
-                    groupPadding: 0,
-                    borderWidth: 0,
-                    shadow: false
-                },
-                column: {
-                    stacking: 'normal',
-                    dataLabels: {
-                        enabled: false,
-                        color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
-                        style: {
-                            textShadow: '0 0 3px black, 0 0 3px black'
-                        }
-                    }
-                }
-            },
-            series: [{
-                name: 'Confirmed',
-                data: confirmedArray,
-                color: '#d86422'
-            }, {
-                name: 'Suspected',
-                data: suspectedArray,
-                color: '#E6925F',
-            }, {
-                name: 'Probable',
-                data: probableArray,
-                color: '#F0C1A5',
-            }]
-        });
-});
+            }
+        },
+        series: [{
+            name: 'Confirmed',
+            data: confirmedArray,
+            color: '#d86422'
+        }, {
+            name: 'Suspected',
+            data: suspectedArray,
+            color: '#E6925F',
+        }, {
+            name: 'Probable',
+            data: probableArray,
+            color: '#F0C1A5',
+        }]
+    });
 
 
      // Update latest numbers
