@@ -4,12 +4,12 @@ $(document).ready(function() {
     var globalData, districtTotals;
     var serverData = await('globalData', 'districtTotals');
 
-    $.ajax('data/epi-weeks.json', {
+    $.ajax('{{site.baseurl}}/data/epi-weeks.json', {
       success: function(data){ serverData.keep('globalData', data) },
       error: function(err) { getThings.fail(err) }
   })
 
-    $.ajax('data/district-centroids.json', {
+    $.ajax('{{site.baseurl}}/data/district-centroids.json', {
       success: function(data){ serverData.keep('districtTotals', data) },
       error: function(err) { getThings.fail(err) }
   })
