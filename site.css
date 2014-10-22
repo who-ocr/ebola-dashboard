@@ -295,7 +295,9 @@ table {
    display: block;
    margin: 5px 0;
 }
-
+.view-report {
+  margin-top: 20px;
+}
 
 /* Pager 
 =====================================================
