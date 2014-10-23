@@ -19,7 +19,18 @@ layout: default
     margin-right: auto;
   }
 
+  table {
+    font-size: 15px;
+  }
 
+  tr {
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+
+ .thAmount {
+    max-width: 100px;
+  }
 
 </style>
  
@@ -196,28 +207,66 @@ layout: default
        <div class="col-md-12">
        
           <h2 class="section-title">Contributions to the response</h2>
-
+          <ul class="nav nav-tabs" id="contributionsTab">
+            <li class="active"><a href="#memberContributionsTab" >Members</a></li>
+            <li><a href="#nonMemberContributionsTab" >Non-Members</a></li>
+          </ul>
           <div class="tab-content">
-            <div class="tab-pane fade in active" id="resources_available_tab">
+            <div class="tab-pane fade in active" id="memberContributionsTab">
               <table class="table table-bordered" style="border-top: none; border-bottom: none;" id='memberContributions'>
                 <thead>
                   <tr>
-                    <th>Members</th>
-                    <th>Amount</th>
+                    <th class='col-md-10'>Contributor</th>
+                    <th class='col-md-2'>Amount</th>
                   </tr>
                 </thead>
                 <tbody></tbody>
-              </table>
+              </table>              
+            </div>
+            <div class="tab-pane fade in" id= 'nonMemberContributionsTab'>
               <table class="table table-bordered" style="border-top: none; border-bottom: none;" id='nonMemberContributions'>
                 <thead>
                   <tr>
-                    <th>Non-Members</th>
-                    <th>Amount</th>
+                    <th class='col-md-10'>Contributor</th>
+                    <th class='col-md-2'>Amount</th>
                   </tr>
                 </thead>
                 <tbody></tbody>
               </table>
-              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+       <div class="col-md-12">
+          <h2 class="section-title">Pledges to the response</h2>
+          <ul class="nav nav-tabs" id="pledgesTab">
+            <li class="active"><a href="#memberPledgesTab" >Members</a></li>
+            <li><a href="#nonMemberPledgesTab" >Non-Members</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade in active" id="memberPledgesTab">
+              <table class="table table-bordered" style="border-top: none; border-bottom: none;" id='memberPledges'>
+                <thead>
+                  <tr>
+                    <th class='col-md-10'>Contributor</th>
+                    <th class='col-md-2'>Amount</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>              
+            </div>
+            <div class="tab-pane fade in" id= 'nonMemberPledgesTab'>
+              <table class="table table-bordered" style="border-top: none; border-bottom: none;" id='nonMemberPledges'>
+                <thead>
+                  <tr>
+                    <th class='col-md-10'>Contributor</th>
+                    <th class='col-md-2'>Amount</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -231,7 +280,7 @@ layout: default
 <script type='text/template' id='rowTmpl'>
 <tr>
   <td> <%= contributor %> </td>
-  <td> <%= amount %> </td>
+  <td style='text-align:right'> <%= amount %> </td>
 </tr>
 </script>
 <script>
@@ -279,11 +328,11 @@ getFunds.then(function(data) {
       $('#funding-progress .progress-bar .sr-only').html('' + progress * 100 + '% Funded');
     }
 
-    (function fillInContributionsTable() {
-      var memberTable = $('#memberContributions');
-      var nonMemberTable = $('#nonMemberContributions')
+    function fillInTable(memberTableSelector, nonMemberTableSelector, dataSelector) {
+      var memberTable = $(memberTableSelector + ' tbody');
+      var nonMemberTable = $(nonMemberTableSelector + ' tbody')
       var tmpl = _.template($('#rowTmpl').html());
-      fundingData.contributions.forEach(function(contribution) {
+      fundingData[dataSelector].forEach(function(contribution) {
         var rowHTML = tmpl({
           contributor: contribution.funder,
           amount: commaSeparateNumber(parseInt(contribution.amount))
@@ -294,12 +343,18 @@ getFunds.then(function(data) {
           nonMemberTable.append(rowHTML);
         }
       })
-    })()
+    }
 
-    // function fillInPledgesTable() {
 
-    // }
 
     moveProgressBar();
+    fillInTable('#memberContributions', '#nonMemberContributions', 'contributions');
+    fillInTable('#memberPledges', '#nonMemberPledges', 'pledges');
+
+
+    $('#contributionsTab a, #pledgesTab a').click(function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
 })
 </script>
