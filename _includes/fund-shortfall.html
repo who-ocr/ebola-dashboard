@@ -57,11 +57,7 @@
 <script>
    var getFunds = await('funds');
 
-<<<<<<< HEAD
    $.ajax('{{site.baseurl}}/data/funding.json', {
-=======
-   $.ajax('/ebola-dashboard/data/funding.json', {
->>>>>>> Fix funding data to pull from json
       success: function(data){ getFunds.keep('funds', data) },
       error: function(err) { getFunds.fail(err) }
     })

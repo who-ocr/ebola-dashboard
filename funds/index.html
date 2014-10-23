@@ -728,7 +728,6 @@ layout: default
    var getFunds = await('funds');
 
    $.ajax('{{site.baseurl}}/data/funding.json', {
-
       success: function(data){ getFunds.keep('funds', data) },
       error: function(err) { getFunds.fail(err) }
     })
@@ -763,11 +762,7 @@ getFunds.then(function(data) {
         moveProgressBar();
     });
 
-<<<<<<< HEAD
     function moveProgressBar() {      
-=======
-    function moveProgressBar() {
->>>>>>> Fix funding data to pull from json
       var bar = $('#funding-progress .progress-bar')
       bar.width(progress*100 + '%') ;
       bar.attr('aria-valuenow', progress*100);
