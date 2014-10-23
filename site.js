@@ -1,20 +1,7 @@
 ---
 ---
 $(document).ready(function() {
-    var globalData, districtTotals;
-    var serverData = await('globalData', 'districtTotals');
-
-    $.ajax('{{site.baseurl}}/data/epi-weeks.json', {
-      success: function(data){ serverData.keep('globalData', data) },
-      error: function(err) { getThings.fail(err) }
-  })
-
-    $.ajax('{{site.baseurl}}/data/district-centroids.json', {
-      success: function(data){ serverData.keep('districtTotals', data) },
-      error: function(err) { getThings.fail(err) }
-  })
-
-    serverData.then(function(data) {
+    mapData.then(function(data) {
 
         districtTotals = data.districtTotals;
         globalData = data.globalData;
@@ -133,6 +120,7 @@ $(document).ready(function() {
             color: '#F0C1A5',
         }]
     });
+
 
 
      // Update latest numbers

@@ -116,6 +116,7 @@ SOFTWARE.
         // timeout guarantees cb gets
         // executed after return
         var thisProm = this;
+
         setTimeout(function(){        
           if (event === 'resolve') {
             cb.call(ctx);
@@ -518,4 +519,3 @@ SOFTWARE.
     window.await = await;
   }
 })();
-
