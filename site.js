@@ -13,10 +13,12 @@ $(document).ready(function() {
 
 
         $.each(globalData, function(index, value) {
+         if (value.epiweek != 'NA') {
           probableArray.push(value.probable);
           suspectedArray.push(value.suspected);
           confirmedArray.push(value.confirmed);
           weeksArray.push(value.epiweek.slice(-2));
+         }
       });
 
 
@@ -135,7 +137,7 @@ $(document).ready(function() {
 
      $('.summary-cases').empty().append(commaSeparateNumber(casesTotal));
      $('.summary-deaths').empty().append(commaSeparateNumber(deathsTotal));
-     $('.summary-cases-recent').empty().append(commaSeparateNumber(globalData[globalData.length -1]['total']));
+     $('.summary-cases-recent').empty().append(commaSeparateNumber(globalData[globalData.length -2]['total']));
 
 
  })

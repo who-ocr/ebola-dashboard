@@ -28,10 +28,8 @@ mapData.then(function(data) {
 
         var epiweek;
         $.each(districtData, function(index, value) {
-            //console.log(value);
             epiweek = value.epiweek;
             $.each(value.districts, function(index, value) {
-                //console.log(value.centroid[1]);
                 if (value.centroid != null) {
 
                     var markup = '<div class="inner"><b>' + value.total_cases + ' cases</b><br>' + value.district + ', ' + value.country + '</div>';
@@ -49,8 +47,10 @@ mapData.then(function(data) {
                     marker.bindPopup(markup, {
                         autoPan: true
                     });
-                    cases.addLayer(marker);
                     
+                    if (epiweek != 'NA') {
+                      cases.addLayer(marker);
+                    }
                 }
 
             });
@@ -60,15 +60,13 @@ mapData.then(function(data) {
 		console.log(cases);
 
         // show the most recent week's cases
-    
-        $('.week-label').empty().append('Week ' + globalData[globalData.length - 1]['epiweek'].slice(-2));
+        var weekNumber = globalData[globalData.length - 2]['epiweek'].slice(-2);
+          $('.week-label').empty().append('Week ' + weekNumber);
         cases.eachLayer(function(marker) {
-            if (marker.options.epiweek === globalData[globalData.length - 1]['epiweek']) {
+            if (marker.options.epiweek === globalData[globalData.length - 2]['epiweek']) {
                 marker.setStyle({'fillOpacity': 0.7, 'opacity': 0, 'clickable': true});
             } else {
                 marker.setStyle({'fillOpacity': 0, 'opacity': 0, 'clickable': false});
-                
-               
             }
         });
         
@@ -78,7 +76,7 @@ mapData.then(function(data) {
         var mapTimer;
 
         function mapLoop() {
-            if (mapCounter == globalData.length - 1) {
+            if (mapCounter == globalData.length - 2) {
                 mapCounter = 0;
             }
             $('#slider').slider({
@@ -97,8 +95,8 @@ mapData.then(function(data) {
         
         
         $("#slider").slider({
-            max: globalData.length - 1,
-            value: globalData.length - 1
+            max: globalData.length - 2,
+            value: globalData.length - 2
         });
 
         var sliderValue;
