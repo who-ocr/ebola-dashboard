@@ -16,7 +16,7 @@ mapData.then(function(data) {
     globalData = data.globalData;
     
     L.mapbox.accessToken = 'pk.eyJ1IjoiZGV2c2VlZCIsImEiOiJnUi1mbkVvIn0.018aLhX0Mb0tdtaT2QNe2Q';
-    var map = L.mapbox.map('map', 'examples.map-20v6611k').setView([8.57, -11.75], 7);
+    var map = L.mapbox.map('map', 'examples.map-20v6611k').setView([7.57, -11.75], 6);
     map.scrollWheelZoom.disable();
     var caseTotals = L.mapbox.featureLayer();
     var recentTotals = L.mapbox.featureLayer();
@@ -24,7 +24,6 @@ mapData.then(function(data) {
     caseTotals.addTo(map);
      
     $.each(districtTotals, function(index, value) {
-    
 
         var markup = '<div class="inner"><b>' + value.total + ' total cases</b><br>' + value.district + ', ' + value.country + '</div>';
 
@@ -33,24 +32,28 @@ mapData.then(function(data) {
                     marker.bindPopup(markup, {
                         autoPan: true
                     });
+                    
         caseTotals.addLayer(marker);
 
     });
     
     $.each(districtTotals, function(index, value) {
     
-
         var markup = '<div class="inner"><b>' + value.recent + ' recent cases</b><br>' + value.district + ', ' + value.country + '</div>';
 
         var marker = L.circleMarker([value.centroid[1], value.centroid[0]], {radius: value.recent / 15, opacity: 0, color: '#d86422', fillOpacity: 0.8});
         
-        
                     marker.bindPopup(markup, {
                         autoPan: true
                     });
+                    
         recentTotals.addLayer(marker);
 
-    });
-    });
+    });  
+    
+    
+    //map.fitBounds(recentTotals.getBounds());
+    
+  });
 });  
 </script>

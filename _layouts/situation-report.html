@@ -2,14 +2,40 @@
 layout: default
 ---
 
-<div class="jumbotron">
+ 
 <div class="container">
-
-   <div class="row">
-    <div class="col-md-12 sitrep">
-      <h2 class="section-title">{{page.title}}</h2>
-      {{content}}
-     </div>
-  </div>
-</div>
+	<div class="row">
+		<div class="col-md-12 sitrep">
+			<h2 class="section-title">
+				Summary
+			</h2>
+			{{content}} 
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 sitrep">
+			<h2 class="section-title">
+				Recent cases
+			</h2>
+			<div class="main-map">
+			   <iframe width='100%' height='500' frameBorder='0' src='{{site.baseurl}}/maps/cases-total.html'></iframe>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 sitrep">
+			<h2 class="section-title">
+				Narrative
+			</h2>
+			{{content}} 
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 sitrep">
+			<h2 class="section-title">
+				EPI Curves
+			</h2>
+			<div id="global-epi" class="global-curve"></div>
+		</div>
+	</div>
 </div>
