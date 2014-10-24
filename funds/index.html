@@ -18,8 +18,19 @@ layout: default
     margin-left: auto;
     margin-right: auto;
   }
-}
 
+  table {
+    font-size: 15px;
+  }
+
+  tr {
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+
+ .thAmount {
+    max-width: 100px;
+  }
 
 </style>
  
@@ -28,10 +39,7 @@ layout: default
         <div class="col-md-12">
           <h2 class="section-title">Funds</h2>
         </div>
-      
-
       {% include fund-shortfall.html %}
-
     </div>
   
   
@@ -199,531 +207,82 @@ layout: default
        <div class="col-md-12">
        
           <h2 class="section-title">Contributions to the response</h2>
-
+          <ul class="nav nav-tabs" id="contributionsTab">
+            <li class="active"><a href="#memberContributionsTab" >Members</a></li>
+            <li><a href="#nonMemberContributionsTab" >Non-Members</a></li>
+          </ul>
           <div class="tab-content">
-            <div class="tab-pane fade in active" id="resources_available_tab">
-              <table class="table table-bordered" style="border-top: none; border-bottom: none;">
-                            <tr>
-                                <th style="text-align: center;">Contributors</th>
-                                <th style="text-align: center; width: 45%; font-weight: bold;">Total</th>
-                            </tr>
-
-                            <tr>
-                                <td style='text-align: left;'></td>
-                                <td style='text-align: right; font-weight: bold;'></td>
-                            </tr>
- 
-                             <tr>
-                                <td style='text-align: left;' class='row-header'>Funds received (USD)</td>
-                                <td style='text-align: right; font-weight: bold;' class='row-header'></td>
-                            </tr>
- 
-                             <tr>
-                                <td style='text-align: left; font-weight: bold;'>Member State contributions</td>
-                                <td style='text-align: right; font-weight: bold;'></td>
-                            </tr>
- 
-                             <tr>
-
-                                <td style='text-align: left;'>Andorra</td>
-
-                                <td style='text-align: right; font-weight: bold;'>20,053</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>Australia - Department of Foreign Affairs and Trade </td>
-
-                                <td style='text-align: right; font-weight: bold;'>2,801,120</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>Australia - Department of Health</td>
-
-                                <td style='text-align: right; font-weight: bold;'>466,853</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>Canada - Department of Foreign Affairs, Trade and Development (DFATD)</td>
-
-                                <td style='text-align: right; font-weight: bold;'>918,274</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>Canada - Public Health Agency of Canada (PHAC)</td>
-
-                                <td style='text-align: right; font-weight: bold;'>169,881</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>Denmark</td>
-
-                                <td style='text-align: right; font-weight: bold;'>3,413,552</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>Estonia</td>
-
-                                <td style='text-align: right; font-weight: bold;'>65,876</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>Finland</td>
-
-                                <td style='text-align: right; font-weight: bold;'>668,449</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>Germany</td>
-
-                                <td style='text-align: right; font-weight: bold;'>13,349,609</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>India</td>
-
-                                <td style='text-align: right; font-weight: bold;'>500,000</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>Japan</td>
-
-                                <td style='text-align: right; font-weight: bold;'>850,000</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>Kuwait</td>
-
-                                <td style='text-align: right; font-weight: bold;'>5,000,000</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>Luxembourg</td>
-
-                                <td style='text-align: right; font-weight: bold;'>133,689</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>Norway</td>
-
-                                <td style='text-align: right; font-weight: bold;'>2,713,921</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>Republic of Korea</td>
-
-                                <td style='text-align: right; font-weight: bold;'>450,000</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>United Kingdom of Great Britain & Northern Ireland – the Scottish Government</td>
-
-                                <td style='text-align: right; font-weight: bold;'>844,595</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>The Slovak Republic</td>
-
-                                <td style='text-align: right; font-weight: bold;'>20,053</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>Republic of Slovenia</td>
-
-                                <td style='text-align: right; font-weight: bold;'>40,107</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>The United States of America - USAID</td>
-
-                                <td style='text-align: right; font-weight: bold;'>6,397,175</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>US - Department of Defense</td>
-
-                                <td style='text-align: right; font-weight: bold;'>13,063,018</td>
-
-                            </tr>
-
- 
-                             <tr>
-                                <td style='text-align: left; font-weight: bold;'>Non-Member State contributions</td>
-                                <td style='text-align: right; font-weight: bold;'></td>
-                            </tr>
- 
-                            <tr>
-
-                                <td style='text-align: left;'>African Development Bank -  Strengthening West Africa’s Public Health Systems Response to the Ebola Crisis (SWAPHS)</td>
-
-                                <td style='text-align: right; font-weight: bold;'>38,647,250</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>African Development Bank -  Liberia</td>
-
-                                <td style='text-align: right; font-weight: bold;'>1,000,000</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>African Development Bank - Sierra Leone</td>
-
-                                <td style='text-align: right; font-weight: bold;'>1,000,000</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>African Development Bank - Nigeria</td>
-
-                                <td style='text-align: right; font-weight: bold;'>1,000,000</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>African Development Bank - Guinea</td>
-
-                                <td style='text-align: right; font-weight: bold;'>1,000,000</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>BHP Billiton</td>
-
-                                <td style='text-align: right; font-weight: bold;'>400,000</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>Bill & Melinda Gates Foundation</td>
-
-                                <td style='text-align: right; font-weight: bold;'>5,073,925</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>CERF - Guinea</td>
-
-                                <td style='text-align: right; font-weight: bold;'>554,766</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>CERF - Nigeria</td>
-
-                                <td style='text-align: right; font-weight: bold;'>1,063,443</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>European Commission - Directorate-General Humanitarian Aid and Civil Protection (ECHO)</td>
-
-                                <td style='text-align: right; font-weight: bold;'>668,449</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>OPEC Fund for International Development (OFID)</td>
-
-                                <td style='text-align: right; font-weight: bold;'>500,000</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>The UnitedNations Development Programme (UNDP)</td>
-
-                                <td style='text-align: right; font-weight: bold;'>17,688</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>World Bank – Guinea </td>
-
-                                <td style='text-align: right; font-weight: bold;'>2,300,000</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>World Bank – Liberia</td>
-
-                                <td style='text-align: right; font-weight: bold;'>19,121,406</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>World Bank – Sierra Leone </td>
-
-                                <td style='text-align: right; font-weight: bold;'>2,800,000</td>
-
-                            </tr>
-
- 
-                             <tr>
-                                <td style='text-align: left; font-weight: bold;background:#f6f6f6;'>Sub-total funds received</td>
-                                <td style='text-align: right; font-weight: bold;background:#f6f6f6;'>127,033,150</td>
-                            </tr>
- 
-                             <tr>
-
-                                <td style='text-align: left;'></td>
-
-                                <td style='text-align: right; font-weight: bold;'></td>
-
-                            </tr>
-
- 
-                             <tr>
-                                <td style='text-align: left;' class='row-header'>Firm pledges (USD)</td>
-                                <td style='text-align: right; font-weight: bold;' class='row-header'></td>
-                            </tr>
- 
-                             <tr>
-                                <td style='text-align: left; font-weight: bold;'>Member State contributions</td>
-                                <td style='text-align: right; font-weight: bold;'></td>
-                            </tr>
- 
-                             <tr>
-
-                                <td style='text-align: left;'>China </td>
-
-                                <td style='text-align: right; font-weight: bold;'>2,000,000</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>France</td>
-
-                                <td style='text-align: right; font-weight: bold;'>668,449</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>Germany -  the German Federal Foreign Office</td>
-
-                                <td style='text-align: right; font-weight: bold;'>267,380</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>Japan</td>
-
-                                <td style='text-align: right; font-weight: bold;'>6,000,000</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>Netherlands</td>
-
-                                <td style='text-align: right; font-weight: bold;'>6,684,492</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>New Zealand</td>
-
-                                <td style='text-align: right; font-weight: bold;'>418,760</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>Qatar</td>
-
-                                <td style='text-align: right; font-weight: bold;'>1,000,000</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>Russia</td>
-
-                                <td style='text-align: right; font-weight: bold;'>50,338</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>Sweden</td>
-
-                                <td style='text-align: right; font-weight: bold;'>2,865,330</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>Thailand</td>
-
-                                <td style='text-align: right; font-weight: bold;'>156,495</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>US - Department of State</td>
-
-                                <td style='text-align: right; font-weight: bold;'>1,200,000</td>
-
-                            </tr>
-
- 
-                             <tr>
-                                <td style='text-align: left; font-weight: bold;'>Non-Member State contributions</td>
-                                <td style='text-align: right; font-weight: bold;'></td>
-                            </tr>
- 
-                             <tr>
-
-                                <td style='text-align: left;'>African Development Bank -  Strengthening West Africa’s Public Health Systems Response to the Ebola Crisis (SWAPHS) Future tranches</td>
-
-                                <td style='text-align: right; font-weight: bold;'>17,352,751</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>African Union</td>
-
-                                <td style='text-align: right; font-weight: bold;'>700,000</td>
-
-                            </tr>
-
- 
-                             <tr>
-
-                                <td style='text-align: left;'>World Bank – Guinea Bissau</td>
-
-                                <td style='text-align: right; font-weight: bold;'>500,000</td>
-
-                            </tr>
-
- 
-                             <tr>
-                                <td style='text-align: left; font-weight: bold;background:#f6f6f6;'>Sub-total firm pledges</td>
-                                <td style='text-align: right; font-weight: bold;background:#f6f6f6;'>39,863,995</td>
-                            </tr>
- 
-                             <tr>
-                                <td style='text-align: left;'></td>
-                                <td style='text-align: right; font-weight: bold;'></td>
-                            </tr>
- 
-                             <tr>
-                                <td style='text-align: left;' class='row-header'>Total funds received and firm pledges</td>
-                                <td style='text-align: right; font-weight: bold;' class='row-header'>166,342,379</td>
-                            </tr>
-
-                        </table>
-                        <p>* Estimated current distribution of funds which can be of used flexibly to address the response needs.</p>
-                        <p>
-                            OCHA’s Financial Tracking Services tracks contributions to <a href="http://fts.unocha.org/pageloader.aspx?page=emerg-emergencyDetails&appealID=1060">UN OCHA’s Overview of Needs and Requirements</a> (which includes WHO) - September 2014 - February 2015.
-                        </p>
+            <div class="tab-pane fade in active" id="memberContributionsTab">
+              <table class="table table-bordered" style="border-top: none; border-bottom: none;" id='memberContributions'>
+                <thead>
+                  <tr>
+                    <th class='col-md-10'>Contributor</th>
+                    <th class='col-md-2'>Amount</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>              
+            </div>
+            <div class="tab-pane fade in" id= 'nonMemberContributionsTab'>
+              <table class="table table-bordered" style="border-top: none; border-bottom: none;" id='nonMemberContributions'>
+                <thead>
+                  <tr>
+                    <th class='col-md-10'>Contributor</th>
+                    <th class='col-md-2'>Amount</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
+      <div class="row">
+       <div class="col-md-12">
+          <h2 class="section-title">Pledges to the response</h2>
+          <ul class="nav nav-tabs" id="pledgesTab">
+            <li class="active"><a href="#memberPledgesTab" >Members</a></li>
+            <li><a href="#nonMemberPledgesTab" >Non-Members</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade in active" id="memberPledgesTab">
+              <table class="table table-bordered" style="border-top: none; border-bottom: none;" id='memberPledges'>
+                <thead>
+                  <tr>
+                    <th class='col-md-10'>Contributor</th>
+                    <th class='col-md-2'>Amount</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>              
+            </div>
+            <div class="tab-pane fade in" id= 'nonMemberPledgesTab'>
+              <table class="table table-bordered" style="border-top: none; border-bottom: none;" id='nonMemberPledges'>
+                <thead>
+                  <tr>
+                    <th class='col-md-10'>Contributor</th>
+                    <th class='col-md-2'>Amount</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p>* Estimated current distribution of funds which can be of used flexibly to address the response needs.</p>
+      <p>
+          OCHA’s Financial Tracking Services tracks contributions to <a href="http://fts.unocha.org/pageloader.aspx?page=emerg-emergencyDetails&appealID=1060">UN OCHA’s Overview of Needs and Requirements</a> (which includes WHO) - September 2014 - February 2015.
+      </p>
+    </div>
+<script type='text/template' id='rowTmpl'>
+<tr>
+  <td> <%= contributor %> </td>
+  <td style='text-align:right'> <%= amount %> </td>
+</tr>
+</script>
 <script>
    var getFunds = await('funds');
 
@@ -769,6 +328,33 @@ getFunds.then(function(data) {
       $('#funding-progress .progress-bar .sr-only').html('' + progress * 100 + '% Funded');
     }
 
+    function fillInTable(memberTableSelector, nonMemberTableSelector, dataSelector) {
+      var memberTable = $(memberTableSelector + ' tbody');
+      var nonMemberTable = $(nonMemberTableSelector + ' tbody')
+      var tmpl = _.template($('#rowTmpl').html());
+      fundingData[dataSelector].forEach(function(contribution) {
+        var rowHTML = tmpl({
+          contributor: contribution.funder,
+          amount: commaSeparateNumber(parseInt(contribution.amount))
+        })
+        if (contribution.member_status === 'member') {
+          memberTable.append(rowHTML);
+        } else {
+          nonMemberTable.append(rowHTML);
+        }
+      })
+    }
+
+
+
     moveProgressBar();
+    fillInTable('#memberContributions', '#nonMemberContributions', 'contributions');
+    fillInTable('#memberPledges', '#nonMemberPledges', 'pledges');
+
+
+    $('#contributionsTab a, #pledgesTab a').click(function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
 })
 </script>
