@@ -18,25 +18,9 @@ mapData.then(function(data) {
     globalData = data.globalData;
     districtData = data.districtData;
 
-<<<<<<< HEAD
-	L.mapbox.accessToken = 'pk.eyJ1IjoiZGV2c2VlZCIsImEiOiJnUi1mbkVvIn0.018aLhX0Mb0tdtaT2QNe2Q';
-	var map = L.mapbox.map('map', 'examples.map-20v6611k').setView([8.57, -11.75], 7);
-	var cases = L.mapbox.featureLayer();
-	map.addLayer(cases);
-	map.scrollWheelZoom.disable();
-
-
-	var epiweek;
-	$.each(districtData, function(index, value) {
-		//console.log(value);
-		epiweek = value.epiweek;
-		$.each(value.districts, function(index, value) {
-			//console.log(value.centroid[1]);
-			if (value.centroid != null) {
-=======
     
   L.mapbox.accessToken = 'pk.eyJ1IjoiZGV2c2VlZCIsImEiOiJnUi1mbkVvIn0.018aLhX0Mb0tdtaT2QNe2Q';
-        var map = L.mapbox.map('map', 'examples.map-20v6611k').setView([7.57, -11.75], 6);
+        var map = L.mapbox.map('map', 'examples.map-20v6611k').setView([8.57, -11.75], 7);
         var cases = L.mapbox.featureLayer();
         map.addLayer(cases);
         map.scrollWheelZoom.disable();
@@ -44,55 +28,47 @@ mapData.then(function(data) {
 
         var epiweek;
         $.each(districtData, function(index, value) {
+            //console.log(value);
             epiweek = value.epiweek;
             $.each(value.districts, function(index, value) {
+                //console.log(value.centroid[1]);
                 if (value.centroid != null) {
->>>>>>> 95e25435d04108fde7d12103565f86db6d1ba922
 
-				var markup = '<div class="inner"><b>' + value.total_cases + ' cases</b><br>' + value.district + ', ' + value.country + '</div>';
+                    var markup = '<div class="inner"><b>' + value.total_cases + ' cases</b><br>' + value.district + ', ' + value.country + '</div>';
 
-				var marker = L.circleMarker([value.centroid[1], value.centroid[0]], {
-					'radius': value.total_cases / 4,
-					'opacity': 0,
-					'color': '#d86422',
-					'fillOpacity': 0.8,
-					'epiweek': epiweek,
-					'epiWeekId': index
-				});
+                    var marker = L.circleMarker([value.centroid[1], value.centroid[0]], {
+                        'radius': value.total_cases / 4, 
+                        'opacity': 0, 
+                        'color': '#d86422', 
+                        'fillOpacity': 0.8,
+                        'epiweek': epiweek,
+                        'epiWeekId': index
+                    });
 
-<<<<<<< HEAD
-=======
+                   
                     marker.bindPopup(markup, {
                         autoPan: true
                     });
+                    cases.addLayer(marker);
                     
-                    if (epiweek != 'NA') {
-                      cases.addLayer(marker);
-                    }
                 }
->>>>>>> 95e25435d04108fde7d12103565f86db6d1ba922
 
-				marker.bindPopup(markup, {
-					autoPan: true
-				});
-				cases.addLayer(marker);
+            });
+        });
 
-			}
 
-		});
-	});
+		console.log(cases);
 
-<<<<<<< HEAD
-
-=======
         // show the most recent week's cases
-        var weekNumber = globalData[globalData.length - 2]['epiweek'].slice(-2);
-          $('.week-label').empty().append('Week ' + weekNumber);
+    
+        $('.week-label').empty().append('Week ' + globalData[globalData.length - 1]['epiweek'].slice(-2));
         cases.eachLayer(function(marker) {
-            if (marker.options.epiweek === globalData[globalData.length - 2]['epiweek']) {
+            if (marker.options.epiweek === globalData[globalData.length - 1]['epiweek']) {
                 marker.setStyle({'fillOpacity': 0.7, 'opacity': 0, 'clickable': true});
             } else {
                 marker.setStyle({'fillOpacity': 0, 'opacity': 0, 'clickable': false});
+                
+               
             }
         });
         
@@ -102,7 +78,7 @@ mapData.then(function(data) {
         var mapTimer;
 
         function mapLoop() {
-            if (mapCounter == globalData.length - 2) {
+            if (mapCounter == globalData.length - 1) {
                 mapCounter = 0;
             }
             $('#slider').slider({
@@ -121,111 +97,38 @@ mapData.then(function(data) {
         
         
         $("#slider").slider({
-            max: globalData.length - 2,
-            value: globalData.length - 2
+            max: globalData.length - 1,
+            value: globalData.length - 1
         });
->>>>>>> 95e25435d04108fde7d12103565f86db6d1ba922
 
-	// show the most recent week's cases
-	$('.week-label').empty().append('Week ' + globalData[globalData.length - 1]['epiweek'].slice(-2));
-	cases.eachLayer(function(marker) {
-		if (marker.options.epiweek === globalData[globalData.length - 1]['epiweek']) {
-			marker.setStyle({
-				'fillOpacity': 0.7,
-				'opacity': 0,
-				'clickable': true
-			});
-		} else {
-			marker.setStyle({
-				'fillOpacity': 0,
-				'opacity': 0,
-				'clickable': false
-			});
+        var sliderValue;
+        $("#slider").on("slide", function(event, ui) {
+            sliderValue = ui.value;
+            
+            $('.week-label').empty().append('Week ' + globalData[sliderValue]['epiweek'].slice(-2));
+            cases.eachLayer(function(marker) {
+                if (marker.options.epiweek === globalData[sliderValue]['epiweek']) {
+                   marker.setStyle({'fillOpacity': 0.7, 'opacity': 0, 'clickable': true});
+                } else {
+                   marker.setStyle({'fillOpacity': 0, 'opacity': 0, 'clickable': false});
+                }
+            });
+        });
 
 
-		}
-	});
+        $("#play-btn").click(function(e) {
+            e.preventDefault();
+            if ($(this).hasClass('playing')) {
+                clearInterval(mapTimer);
+                $(this).removeClass('playing');
+            } else {
+                e.preventDefault();
+                mapTimer = setInterval(mapLoop, 150);
+                $(this).addClass('playing');
+            }
+        });
 
-
-
-	var mapCounter = 0;
-	var mapTimer;
-
-	function mapLoop() {
-		if (mapCounter == globalData.length - 1) {
-			mapCounter = 0;
-		}
-		$('#slider').slider({
-			value: mapCounter
-		});
-		$('.week-label').empty().append('Week ' + globalData[mapCounter]['epiweek'].slice(-2));
-		cases.eachLayer(function(marker) {
-			if (marker.options.epiweek === globalData[mapCounter]['epiweek']) {
-				marker.setStyle({
-					'fillOpacity': 0.7,
-					'opacity': 0,
-					'clickable': true
-				});
-			} else {
-				marker.setStyle({
-					'fillOpacity': 0,
-					'opacity': 0,
-					'clickable': false
-				});
-			}
-		});
-		mapCounter++;
-	}
-
-
-	$("#slider").slider({
-		max: globalData.length - 1,
-		value: globalData.length - 1
-	});
-
-
-	var sliderValue;
-	$("#slider").on("slide", function(event, ui) {
-		sliderValue = ui.value;
-
-		$('.week-label').empty().append('Week ' + globalData[sliderValue]['epiweek'].slice(-2));
-		cases.eachLayer(function(marker) {
-			if (marker.options.epiweek === globalData[sliderValue]['epiweek']) {
-				marker.setStyle({
-					'fillOpacity': 0.7,
-					'opacity': 0,
-					'clickable': true
-				});
-			} else {
-				marker.setStyle({
-					'fillOpacity': 0,
-					'opacity': 0,
-					'clickable': false
-				});
-			}
-		});
-	});
-
-
-
-	$("#play-btn").click(function(e) {
-	e.preventDefault();
-	if ($(this).hasClass('playing')) {
-		clearInterval(mapTimer);
-		$(this).removeClass('playing');
-	} else {
-		e.preventDefault();
-		mapTimer = setInterval(mapLoop, 150);
-		$(this).addClass('playing');
-	}
-	});
-
-<<<<<<< HEAD
-
-});  
-=======
     })
 });
   
->>>>>>> 95e25435d04108fde7d12103565f86db6d1ba922
 </script>
