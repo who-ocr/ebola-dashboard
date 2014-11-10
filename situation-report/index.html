@@ -1,0 +1,32 @@
+---
+layout: default
+category: situation-report
+title: "Situation Report"
+description: The latest situation reports on the WHO Ebola Response.
+rss: /situation-report.rss
+---
+
+<div class="jumbotron">
+<div class="container">
+
+   <div class="row">
+    <div class="col-md-12">
+      <h2 class="section-title">Latest Report</h2>
+     </div>
+  </div>
+
+	{% for item in site.categories.situation-report limit:1 %}
+  	<a href="{{site.baseurl}}{{item.url}}">
+   		<div class="row">	
+		<div class="summary-date col-md-2">
+			{{item.date|date:'%B %d, %Y'}}
+		</div>
+		<div class="summary-narrative col-md-10">
+			<p>{{item.latest}}</p>
+		</div>
+  		</div>
+  	</a>
+  	{% endfor %}
+
+</div>
+</div>

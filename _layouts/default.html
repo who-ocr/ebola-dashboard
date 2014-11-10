@@ -1,0 +1,80 @@
+---
+title: 'Ebola Data Portal | World Health Organization'
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ebola Data Portal | World Health Organization</title>
+  <meta charset='UTF-8'/>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <link rel='alternate' type='application/rss+xml' title='RSS' href='SITEURLGOESHERE/blog.rss' />
+  
+ 
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="{{site.baseurl}}/js/bootstrap.min.js"></script>
+  <script src="{{site.baseurl}}/js/underscore.min.js"></script>
+  <script src="{{site.baseurl}}/js/await.js"></script>
+
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.0.1/mapbox.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.0.1/mapbox.css' rel='stylesheet' />
+  
+  <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css' rel='stylesheet' />
+  <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet' />
+
+
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+  <link rel='shortcut icon' href='{{site.baseurl}}/img/favicon.ico' type='image/x-icon' />
+  <link href="{{site.baseurl}}/css/bootstrap.min.css" rel="stylesheet">
+  <link href='{{site.baseurl}}/site.css' rel='stylesheet' />
+
+   <script src='{{site.baseurl}}/js/mapdata.js'></script>
+   <script src='{{site.baseurl}}/site.js'></script>
+  
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation"> 
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="{{ site.baseurl }}/">Ebola Data Portal</a> 
+</div>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	<ul class="nav navbar-nav navbar-right">
+		<li><a href="{{ site.baseurl }}/cases/">Cases</a></li>
+		<li><a href="" style='color:#999;'>Response</a></li>
+		<li><a href="{{ site.baseurl }}/funds/">Funds</a></li>
+		<!--
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actions <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Browse maps</a></li>
+            <li><a href="#">Find data</a></li>
+            <li><a href="#">About</a></li>
+            </ul>
+        </li>
+         -->
+	</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav> 
+<div class="page">
+	{{content}} 
+	<div class="container">
+		<div class="row row-footer">
+			<div class="col-md-12">
+				Last updated 10/15/2014 13:45 
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- end page -->
+</body>
+</html>

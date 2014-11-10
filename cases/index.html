@@ -1,0 +1,200 @@
+---
+layout: default
+---
+
+  
+    <div class="container">
+      
+      <div class="row">
+       <div class="col-md-12">
+         <h2 class="section-title">Cases</h2>
+       </div>
+       
+        <div class="col-md-4 col-sm-4 stat">
+          Total cases<br>
+          <span class="summary-cases">0</span>
+          <small>Since epidemic week 1</small>
+        </div>
+
+        <div class="col-md-4 col-sm-4 stat">
+          Total deaths<br>
+          <span class="summary-deaths">0</span>
+          <small>Since epidemic week 1</small>
+        </div>
+
+        <div class="col-md-4 col-sm-4 stat">
+          New cases<br>
+          <span class="summary-cases-recent">0</span>
+          <small>Past 7 days</small>
+          </div>
+        </div>
+    
+    
+
+			<div class="row">
+			  <div class="col-md-12">
+			    <h2 class="section-title">Geographic spread</h2>
+				<div id="cases-map" class="main-map">
+				<iframe width='100%' height='500' frameBorder='0' src='{{site.baseurl}}/maps/cases-total.html'></iframe>
+				</div>
+			  </div>
+			</div>
+		  
+	
+
+        <div class="row">
+          <div class="col-md-12">
+               <h2 class="section-title">Global epidemic curve</h2>
+               <div id="global-epi" class="global-curve"></div>
+            </div>
+        </div>
+        
+        
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="section-title">Cases by week</h2>
+          </div>
+          <div class="col-md-12">
+            <div class="main-map">
+              <iframe width='100%' height='500' frameBorder='0' src='{{site.baseurl}}/maps/cases-week.html'></iframe>
+            </div>
+         </div>
+        </div>
+    
+       <!--
+        <div class="row">
+         <div class="col-md-12">
+          <h2 class="section-title">Country curves</h2>
+          </div>
+          <div class="col-md-4">
+            <div class="chart">
+              Guniea
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="chart">
+              Liberia
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="chart">
+              Sierra Leone
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="chart">
+              Nigeria
+            </div>
+          </div>
+        </div>
+  		-->
+
+        <div class="row">
+          <div class="col-md-12">
+           <h2 class="section-title">Country status</h2>
+            <table class="table transmission-table">
+              <tr class="table-labels">
+                <td>Countries with widespread and intense transmission</td>
+
+                <td></td>
+
+                <td>Countries with initial or localized transmission</td>
+
+                <td></td>
+
+                <td>Countries neighboring those with intense transmission</td>
+
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>Guinea</td>
+
+                <td></td>
+
+                <td>Nigeria</td>
+
+                <td></td>
+
+                <td>Benin</td>
+
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>Liberia</td>
+
+                <td></td>
+
+                <td>Senegal</td>
+
+                <td></td>
+
+                <td>Burkina Faso</td>
+
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>Sierra Leone</td>
+
+                <td></td>
+
+                <td>United States</td>
+
+                <td></td>
+
+                <td>Cote d'Ivorie</td>
+
+                <td></td>
+              </tr>
+
+              <tr>
+                <td></td>
+
+                <td></td>
+
+                <td></td>
+
+                <td></td>
+
+                <td>Guinea Bissau</td>
+
+                <td></td>
+              </tr>
+
+              <tr>
+                <td></td>
+
+                <td></td>
+
+                <td></td>
+
+                <td></td>
+
+                <td>Mali</td>
+
+                <td></td>
+              </tr>
+
+              <tr>
+                <td></td>
+
+                <td></td>
+
+                <td></td>
+
+                <td></td>
+
+                <td>Senegal</td>
+
+                <td></td>
+              </tr>
+            </table>
+      </div>
+    </div>
+    
+  </div>

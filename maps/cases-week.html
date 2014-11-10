@@ -1,0 +1,134 @@
+---
+layout: map
+---
+
+     
+  				<div id="slider"></div>
+  				<a id="play-btn" href="" class="btn btn-default"><span class="glyphicon glyphicon-play"></span></a>
+  				<div class="week-label"></div>
+                <div id="map"></div>
+         
+        
+        
+<script>
+$(document).ready(function() {
+mapData.then(function(data) {
+
+    districtTotals = data.districtTotals;
+    globalData = data.globalData;
+    districtData = data.districtData;
+
+    
+  L.mapbox.accessToken = 'pk.eyJ1IjoiZGV2c2VlZCIsImEiOiJnUi1mbkVvIn0.018aLhX0Mb0tdtaT2QNe2Q';
+        var map = L.mapbox.map('map', 'examples.map-20v6611k').setView([8.57, -11.75], 7);
+        var cases = L.mapbox.featureLayer();
+        map.addLayer(cases);
+        map.scrollWheelZoom.disable();
+
+
+        var epiweek;
+        $.each(districtData, function(index, value) {
+            //console.log(value);
+            epiweek = value.epiweek;
+            $.each(value.districts, function(index, value) {
+                //console.log(value.centroid[1]);
+                if (value.centroid != null) {
+
+                    var markup = '<div class="inner"><b>' + value.total_cases + ' cases</b><br>' + value.district + ', ' + value.country + '</div>';
+
+                    var marker = L.circleMarker([value.centroid[1], value.centroid[0]], {
+                        'radius': value.total_cases / 4, 
+                        'opacity': 0, 
+                        'color': '#d86422', 
+                        'fillOpacity': 0.8,
+                        'epiweek': epiweek,
+                        'epiWeekId': index
+                    });
+
+                   
+                    marker.bindPopup(markup, {
+                        autoPan: true
+                    });
+                    cases.addLayer(marker);
+                    
+                }
+
+            });
+        });
+
+
+		console.log(cases);
+
+        // show the most recent week's cases
+    
+        $('.week-label').empty().append('Week ' + globalData[globalData.length - 1]['epiweek'].slice(-2));
+        cases.eachLayer(function(marker) {
+            if (marker.options.epiweek === globalData[globalData.length - 1]['epiweek']) {
+                marker.setStyle({'fillOpacity': 0.7, 'opacity': 0, 'clickable': true});
+            } else {
+                marker.setStyle({'fillOpacity': 0, 'opacity': 0, 'clickable': false});
+                
+               
+            }
+        });
+        
+         
+         
+        var mapCounter = 0;
+        var mapTimer;
+
+        function mapLoop() {
+            if (mapCounter == globalData.length - 1) {
+                mapCounter = 0;
+            }
+            $('#slider').slider({
+                value: mapCounter
+            });
+            $('.week-label').empty().append('Week ' + globalData[mapCounter]['epiweek'].slice(-2));
+            cases.eachLayer(function(marker) {
+                if (marker.options.epiweek === globalData[mapCounter]['epiweek']) {
+                  marker.setStyle({'fillOpacity': 0.7, 'opacity': 0, 'clickable': true});
+                } else {
+                  marker.setStyle({'fillOpacity': 0, 'opacity': 0, 'clickable': false});
+                }
+            });
+            mapCounter++;
+        }
+        
+        
+        $("#slider").slider({
+            max: globalData.length - 1,
+            value: globalData.length - 1
+        });
+
+        var sliderValue;
+        $("#slider").on("slide", function(event, ui) {
+            sliderValue = ui.value;
+            
+            $('.week-label').empty().append('Week ' + globalData[sliderValue]['epiweek'].slice(-2));
+            cases.eachLayer(function(marker) {
+                if (marker.options.epiweek === globalData[sliderValue]['epiweek']) {
+                   marker.setStyle({'fillOpacity': 0.7, 'opacity': 0, 'clickable': true});
+                } else {
+                   marker.setStyle({'fillOpacity': 0, 'opacity': 0, 'clickable': false});
+                }
+            });
+        });
+
+
+        $("#play-btn").click(function(e) {
+            e.preventDefault();
+            if ($(this).hasClass('playing')) {
+                clearInterval(mapTimer);
+                $(this).removeClass('playing');
+            } else {
+                e.preventDefault();
+                mapTimer = setInterval(mapLoop, 150);
+                $(this).addClass('playing');
+            }
+        });
+
+    })
+});
+  
+</script>
